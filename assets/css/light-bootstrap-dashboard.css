@@ -1843,7 +1843,7 @@ fieldset[disabled] .btn.active {
 
 .btn.btn-outline {
     color: #888888;
-    background-color: transparent;
+    background-color: #FFFFFF;
     border: 1px solid #888888;
     opacity: 1;
     filter: alpha(opacity=100);

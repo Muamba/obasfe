@@ -28,7 +28,7 @@
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-md-8 ml-auto mr-auto">
-                                <form id="wizardForm" method="" action="" style="margin-top: 15%;">
+                                <form id="wizardForm" method="" action="" style="margin-top: 5%;">
                                     <div class="card card-wizard"style=" background-color: #468771;opacity: 0.8;filter: alpha(opacity=70)">
                                         <div class="card-header "style=" background-color: #468771">
                                             <h3 class="card-title text-center">
@@ -40,7 +40,7 @@
                                         <div class="card-body " >
 
 
-                                            <ul class="nav nav-tabs" >
+                                            <ul class="nav nav-tabs" style="border-color: #468771; width: 0px"  >
                                                 <li class="nav-item">
                                                     <a class="nav-link active" href="#tab1" data-toggle="tab" role="tab" aria-controls="tab1" aria-selected="true" style=" background-color: #468771"></a>
                                                 </li>
@@ -59,7 +59,6 @@
                                                 <li class="nav-item">
                                                     <a class="nav-link" href="#tab6" data-toggle="tab" role="tab" aria-controls="tab3" aria-selected="true" style=" background-color: #468771"></a>
                                                 </li>
-
                                                 <li class="nav-item">
                                                     <a class="nav-link" href="#tab7" data-toggle="tab" role="tab" aria-controls="tab3" aria-selected="true" style=" background-color: #468771"></a>
                                                 </li><li class="nav-item">
@@ -68,6 +67,7 @@
                                                     <a class="nav-link" href="#tab9" data-toggle="tab" role="tab" aria-controls="tab3" aria-selected="true" style=" background-color: #468771"></a>
                                                 </li>
                                             </ul>
+
 
                                             <div class="tab-content">
                                                 <div class="tab-pane fade show active" id="tab1" role="tabpanel">
@@ -113,87 +113,61 @@
 
 
 
-
+                                                <!-- second Residential details tab
+                                                 - we getting the physical address
+                                                 - city
+                                                 - postal code
+                                                  -->
 
 
                                                 <div class="tab-pane fade" id="tab2" role="tabpanel">
-                                                    <h2 class="text-center" style="color: #fcf8e3">Please give us more details about your platform.</h2>
+                                                    <h2 class="text-center" style="color: #fcf8e3">Please give us more details about your platform</h2>
                                                     <div class="row justify-content-center">
                                                         <div class="col-md-10">
-                                                            <div class="form-group">
-                                                                <label class="control-label">Your Website
-                                                                    <star>*</star>
-                                                                </label>
-                                                                <input class="form-control" type="text" name="website" url="true" placeholder="ex: http://www.creative-tim.com" />
-                                                            </div>
+
+                                                                <div class="form-group">
+                                                                    <label class="control-label">
+                                                                        <star>*</star>
+                                                                    </label>
+                                                                    <input class="form-control" type="text" name="first_name" placeholder="Physical address" />
+                                                                </div>
+
                                                         </div>
                                                     </div>
+
                                                     <div class="row justify-content-center">
-                                                        <div class="col-md-5">
-                                                            <div class="form-group">
-                                                                <label class="control-label">Framework Type</label>
-                                                                <input class="form-control" type="text" name="framework" placeholder="ex: http://www.creative-tim.com" />
+                                                        <div class="col-md-10">
+
+                                                                <div class="form-group">
+                                                                    <label class="control-label">
+                                                                        <star>*</star>
+                                                                        </label>
+                                                                        <input class="form-control" type="text" name="first_name" placeholder="City" />
+                                                                    </div>
+
                                                             </div>
-                                                        </div>
-                                                        <div class="col-md-5">
-                                                            <div class="form-group">
-                                                                <label class="control-label">Language
-                                                                    <star>*</star>
-                                                                </label>
-                                                                <select name="cities" class="selectpicker" data-title="Single Select" data-style="btn-default btn-outline" data-menu-style="dropdown-blue">
-                                                                    <option value="id">Bahasa Indonesia</option>
-                                                                    <option value="ms">Bahasa Melayu</option>
-                                                                    <option value="ca">Català</option>
-                                                                    <option value="da">Dansk</option>
-                                                                    <option value="de">Deutsch</option>
-                                                                    <option value="en">English</option>
-                                                                    <option value="es">Español</option>
-                                                                    <option value="el">Eλληνικά</option>
-                                                                    <option value="fr">Français</option>
-                                                                    <option value="it">Italiano</option>
-                                                                    <option value="hu">Magyar</option>
-                                                                    <option value="nl">Nederlands</option>
-                                                                    <option value="no">Norsk</option>
-                                                                    <option value="pl">Polski</option>
-                                                                    <option value="pt">Português</option>
-                                                                    <option value="fi">Suomi</option>
-                                                                    <option value="sv">Svenska</option>
-                                                                    <option value="tr">Türkçe</option>
-                                                                    <option value="is">Íslenska</option>
-                                                                    <option value="cs">Čeština</option>
-                                                                    <option value="ru">Русский</option>
-                                                                    <option value="th">ภาษาไทย</option>
-                                                                    <option value="zh">中文 (简体)</option>
-                                                                    <option value="zh-TW">中文 (繁體)</option>
-                                                                    <option value="ja">日本語</option>
-                                                                    <option value="ko">한국어</option>
-                                                                </select>
-                                                            </div>
-                                                        </div>
                                                     </div>
                                                     <div class="row justify-content-center">
-                                                        <div class="col-md-5">
-                                                            <div class="form-group">
-                                                                <label class="control-label">Bootstrap Version</label>
-                                                                <select name="versions" class="selectpicker" data-title="Single Select" data-style="btn-default btn-outline" data-menu-style="dropdown-blue">
-                                                                    <option selected="" disabled="">- version -</option>
-                                                                    <option value="1.1">Bootstrap 1.1</option>
-                                                                    <option value="2.0">Bootstrap 2.0</option>
-                                                                    <option value="3.0">Bootstrap 3.0</option>
-                                                                    <option value="4.0">Bootstrap 4.0(alpha)</option>
-                                                                    <option value="4.0">Bootstrap 4.0(beta)</option>
-                                                                </select>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-5">
-                                                            <div class="form-group">
-                                                                <label class="control-label">Price</label>
-                                                                <input class="form-control" type="text" name="price" placeholder="ex: 19.00" />
-                                                            </div>
+                                                        <div class="col-md-10">
+
+                                                                <div class="form-group">
+                                                                    <label class="control-label">
+                                                                        <star>*</star>
+                                                                        </label>
+                                                                        <input class="form-control" type="text" name="first_name" placeholder="Postal Code" />
+                                                                </div>
+
                                                         </div>
                                                     </div>
                                                 </div>
 
+
+                                                <!-- Third tab District Municipality tab
+                                                 ** we getting (input)
+                                                 - Province
+                                                 - Development
+
+                                                  -->
 
 
                                                 <div class="tab-pane fade " id="tab3" role="tabpanel">
@@ -236,6 +210,8 @@
 
 
 
+
+
                                                     <div class="row justify-content-center">
                                                         <div class="col-md-10">
                                                             <div class="form-group">
@@ -250,214 +226,390 @@
 
 
 
+                                                <!-- Third tab District Municipality tab
+                                                 ** we getting (input)
+                                                 - Province
+                                                 - Development
+
+                                                  -->
 
 
                                                 <div class="tab-pane fade " id="tab4" role="tabpanel">
-                                                    <h2 class="text-center" style="color: #fcf8e3">Next of kin Contact Details</h2>
+                                                    <h2 class="text-center" style="color: #fcf8e3">District Municipality</h2>
                                                     <div class="row justify-content-center">
-                                                        <div class="col-md-5 ">
-                                                            <div class="form-group">
-                                                                <label class="control-label"></label>
-                                                                <input class="form-control" type="text" name="first_name" placeholder="Surname" />
-                                                            </div>
-                                                        </div>
                                                         <div class="col-md-5">
                                                             <div class="form-group">
-                                                                <label class="control-label"></label>
-                                                                <input class="form-control" type="text" name="last_name" required="true" placeholder="First Name" />
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-5">
-                                                            <div class="form-group">
-                                                                <label class="control-label"></label>
-                                                                <input class="form-control" type="text" name="last_name" required="true" placeholder="First Name" />
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-5">
-                                                            <div class="form-group">
-                                                                <label class="control-label"></label>
-                                                                <input class="form-control" type="text" name="last_name" required="true" placeholder="First Name" />
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="row justify-content-center">
-                                                        <div class="col-md-10">
-                                                            <div class="form-group">
-                                                                <label class="control-label">
+                                                                <label class="control-label">Language
                                                                     <star>*</star>
                                                                 </label>
-                                                                <input class="form-control" type="text" name="email" email="true" placeholder="ex: hello@creative-tim.com" />
+                                                                <select name="cities" class="selectpicker" data-title="Single Select" data-style="btn-default btn-outline" data-menu-style="dropdown-blue" placeholder="Province">
+                                                                    <option value="id">Eastern Cape</option>
+                                                                    <option value="ms">Free State</option>
+                                                                    <option value="ca">Gauteng</option>
+                                                                    <option value="da">KwaZulu-Natal</option>
+                                                                    <option value="de">Limpopo</option>
+                                                                    <option value="en">Mpumalanga</option>
+                                                                    <option value="es">Northern Cape</option>
+                                                                    <option value="el">North-West</option>
+                                                                    <option value="fr">Western Cape</option>
+                                                                    <option value="it">QwaQwa</option>
+                                                                    <option value="hu">Transkei</option>
+                                                                    <option value="nl">Nederlands</option>
+                                                                </select>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                </div>
+                                                    <div class="row justify-content-center">
+                                                        <div class="col-md-5">
+                                                            <div class="form-group">
+                                                                <label class="control-label">Language
+                                                                    <star>*</star>
+                                                                </label>
+                                                                <select name="cities" class="selectpicker" data-title="Single Select" data-style="btn-default btn-outline" data-menu-style="dropdown-blue" placeholder="Province">
+                                                                    <option value="id">Eastern Cape</option>
+                                                                    <option value="ms">Free State</option>
+                                                                    <option value="ca">Gauteng</option>
+                                                                    <option value="da">KwaZulu-Natal</option>
+                                                                    <option value="de">Limpopo</option>
+                                                                    <option value="en">Mpumalanga</option>
+                                                                    <option value="es">Northern Cape</option>
+                                                                    <option value="el">North-West</option>
+                                                                    <option value="fr">Western Cape</option>
+                                                                    <option value="it">QwaQwa</option>
+                                                                    <option value="hu">Transkei</option>
+                                                                    <option value="nl">Nederlands</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                            </div>
+
+
+
+
+                                                <!-- fith tab Matric.... tab
+                                             ** we getting (input)
+                                             - subjects
+                                             - results
+
+                                              -->
 
 
 
                                                 <div class="tab-pane fade " id="tab5" role="tabpanel">
-                                                    <h2 class="text-center" style="color: #fcf8e3">Next of kin Contact Details</h2>
+                                                    <h2 class="text-center" style="color: #fcf8e3">Subjects form</h2>
+
+                                                    <div class="row justify-content-center">
+                                                        <div class="col-md-5">
+                                                            <div class="form-group">
+
+                                                                <select name="cities" class="selectpicker" data-title="Application Type" data-style="btn-default btn-outline" data-menu-style="dropdown-blue" >
+                                                                    <option value="id">Student</option>
+                                                                    <option value="ms">matric</option>
+
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
                                                     <div class="row justify-content-center">
                                                         <div class="col-md-5 ">
                                                             <div class="form-group">
-                                                                <label class="control-label"></label>
-                                                                <input class="form-control" type="text" name="first_name" placeholder="Surname" />
+
+                                                                <input class="form-control" type="text" name="first_name" placeholder="subject name" />
                                                             </div>
                                                         </div>
                                                         <div class="col-md-5">
                                                             <div class="form-group">
-                                                                <label class="control-label"></label>
-                                                                <input class="form-control" type="text" name="last_name" required="true" placeholder="First Name" />
+
+                                                                <input class="form-control" type="text" name="last_name" required="true" placeholder="Result" />
                                                             </div>
                                                         </div>
                                                         <div class="col-md-5">
                                                             <div class="form-group">
-                                                                <label class="control-label"></label>
-                                                                <input class="form-control" type="text" name="last_name" required="true" placeholder="First Name" />
+
+                                                                <input class="form-control" type="text" name="last_name" required="true" placeholder="subject name" />
                                                             </div>
                                                         </div>
                                                         <div class="col-md-5">
                                                             <div class="form-group">
-                                                                <label class="control-label"></label>
-                                                                <input class="form-control" type="text" name="last_name" required="true" placeholder="First Name" />
+
+                                                                <input class="form-control" type="text" name="last_name" required="true" placeholder="Result" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-5">
+                                                            <div class="form-group">
+
+                                                                <input class="form-control" type="text" name="last_name" required="true" placeholder="subject name" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-5">
+                                                            <div class="form-group">
+
+                                                                <input class="form-control" type="text" name="last_name" required="true" placeholder="Result" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-5">
+                                                            <div class="form-group">
+
+                                                                <input class="form-control" type="text" name="last_name" required="true" placeholder="subject name" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-5">
+                                                            <div class="form-group">
+
+                                                                <input class="form-control" type="text" name="last_name" required="true" placeholder="Result" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-5">
+                                                            <div class="form-group">
+
+                                                                <input class="form-control" type="text" name="last_name" required="true" placeholder="subject name" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-5">
+                                                            <div class="form-group">
+
+                                                                <input class="form-control" type="text" name="last_name" required="true" placeholder="Result" />
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="row justify-content-center">
-                                                        <div class="col-md-10">
-                                                            <div class="form-group">
-                                                                <label class="control-label">
-                                                                    <star>*</star>
-                                                                </label>
-                                                                <input class="form-control" type="text" name="email" email="true" placeholder="ex: hello@creative-tim.com" />
-                                                            </div>
-                                                        </div>
-                                                    </div>
+
                                                 </div>
 
+
+                                                <!-- sixth tab Contact Details.... tab
+                                             ** we getting (input)
+                                             - subjects
+                                             - results
+
+                                              -->
 
                                                 <div class="tab-pane fade " id="tab6" role="tabpanel">
-                                                    <h2 class="text-center" style="color: #fcf8e3">Next of kin Contact Details</h2>
+                                                    <h2 class="text-center" style="color: #fcf8e3">Contact Details</h2>
                                                     <div class="row justify-content-center">
                                                         <div class="col-md-5 ">
                                                             <div class="form-group">
                                                                 <label class="control-label"></label>
-                                                                <input class="form-control" type="text" name="first_name" placeholder="Surname" />
+                                                                <input class="form-control" type="text" name="first_name" placeholder="Cell Phone" />
                                                             </div>
                                                         </div>
                                                         <div class="col-md-5">
                                                             <div class="form-group">
                                                                 <label class="control-label"></label>
-                                                                <input class="form-control" type="text" name="last_name" required="true" placeholder="First Name" />
+                                                                <input class="form-control" type="text" name="last_name" required="true" placeholder="Alternative Number" />
                                                             </div>
                                                         </div>
                                                         <div class="col-md-5">
                                                             <div class="form-group">
                                                                 <label class="control-label"></label>
-                                                                <input class="form-control" type="text" name="last_name" required="true" placeholder="First Name" />
+                                                                <input class="form-control" type="text" name="last_name" required="true" placeholder="Alternative email" />
                                                             </div>
                                                         </div>
                                                         <div class="col-md-5">
                                                             <div class="form-group">
                                                                 <label class="control-label"></label>
-                                                                <input class="form-control" type="text" name="last_name" required="true" placeholder="First Name" />
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="row justify-content-center">
-                                                        <div class="col-md-10">
-                                                            <div class="form-group">
-                                                                <label class="control-label">
-                                                                    <star>*</star>
-                                                                </label>
-                                                                <input class="form-control" type="text" name="email" email="true" placeholder="ex: hello@creative-tim.com" />
+                                                                <input class="form-control" type="text" name="last_name" required="true" placeholder="Student Number" />
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
 
 
+                                                <!-- sseventh tab Contact Details.... tab
+                                            ** we getting (input)
+                                            - subjects
+                                            - results
+
+                                             -->
 
 
 
                                                 <div class="tab-pane fade " id="tab7" role="tabpanel">
-                                                    <h2 class="text-center" style="color: #fcf8e3">Next of kin Contact Details</h2>
+                                                    <h2 class="text-center" style="color: #fcf8e3">Course Details</h2>
+
                                                     <div class="row justify-content-center">
-                                                        <div class="col-md-5 ">
-                                                            <div class="form-group">
-                                                                <label class="control-label"></label>
-                                                                <input class="form-control" type="text" name="first_name" placeholder="Surname" />
-                                                            </div>
-                                                        </div>
                                                         <div class="col-md-5">
-                                                            <div class="form-group">
-                                                                <label class="control-label"></label>
-                                                                <input class="form-control" type="text" name="last_name" required="true" placeholder="First Name" />
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-5">
-                                                            <div class="form-group">
-                                                                <label class="control-label"></label>
-                                                                <input class="form-control" type="text" name="last_name" required="true" placeholder="First Name" />
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-5">
-                                                            <div class="form-group">
-                                                                <label class="control-label"></label>
-                                                                <input class="form-control" type="text" name="last_name" required="true" placeholder="First Name" />
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="row justify-content-center">
-                                                        <div class="col-md-10">
                                                             <div class="form-group">
                                                                 <label class="control-label">
                                                                     <star>*</star>
                                                                 </label>
-                                                                <input class="form-control" type="text" name="email" email="true" placeholder="ex: hello@creative-tim.com" />
+                                                                <select name="cities" class="selectpicker" data-title="Do you have any outstanding Debt" data-style="btn-default btn-outline" data-menu-style="dropdown-blue" placeholder="Do you have any outstanding Debt">
+                                                                    <option value="id">Yes</option>
+                                                                    <option value="ms">No</option>
+
+                                                                </select>
                                                             </div>
                                                         </div>
                                                     </div>
+
+
+                                                    <div class="row justify-content-center">
+                                                        <div class="col-md-5">
+                                                            <div class="form-group">
+                                                                <label class="control-label">
+                                                                    <star>*</star>
+                                                                </label>
+                                                                <select name="cities" class="selectpicker" data-title="Intent study field" data-style="btn-default btn-outline" data-menu-style="dropdown-blue" placeholder="Intent study field">
+                                                                    <option value="id">Engineering and technology</option>
+                                                                    <option value="ms">Agriculture</option>
+                                                                    <option value="id">Business</option>
+                                                                    <option value="ms">Education</option>
+                                                                    <option value="id">Divinity</option>
+                                                                    <option value="ms">Agriculture</option>
+                                                                    <option value="id">History</option>
+                                                                    <option value="ms">Economics</option>
+                                                                    <option value="id">Geology</option>
+                                                                    <option value="ms">Zoology</option>
+                                                                    <option value="id">Psychology</option>
+                                                                    <option value="ms">Chemistry</option>
+
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="row justify-content-center">
+                                                        <div class="col-md-5">
+                                                            <div class="form-group">
+                                                                <label class="control-label">
+                                                                    <star>*</star>
+                                                                </label>
+                                                                <select name="cities" class="selectpicker" data-title="Duration" data-style="btn-default btn-outline" data-menu-style="dropdown-blue" placeholder="Duration">
+                                                                    <option value="id">1 Year</option>
+                                                                    <option value="ms">2 Year</option>
+                                                                    <option value="id">3 Year</option>
+                                                                    <option value="ms">4 Year</option>
+                                                                    <option value="id">5 Year</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
                                                 </div>
 
 
+
+
+                                                <!-- heighth tab Course Details.... tab
+                                            ** we getting (input)
+                                            - subjects
+                                            - results
+
+                                             -->
+
                                                 <div class="tab-pane fade " id="tab8" role="tabpanel">
-                                                    <h2 class="text-center" style="color: #fcf8e3">Next of kin Contact Details</h2>
+                                                    <h2 class="text-center" style="color: #fcf8e3">Upload Document</h2>
+
+
                                                     <div class="row justify-content-center">
                                                         <div class="col-md-5 ">
                                                             <div class="form-group">
+                                                                <label class="control-label">ghgjghgjgjjggh</label>
+
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-md-5">
+                                                            <div class="form-group">
                                                                 <label class="control-label"></label>
-                                                                <input class="form-control" type="text" name="first_name" placeholder="Surname" />
+                                                                <input class="form-control" type="text" name="last_name" required="true" placeholder="Result" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-5">
+                                                            <div class="form-group">
+                                                                <label class="control-label">kjhgkjhgkjhjhkjk</label>
+
+
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-md-5">
+                                                            <div class="form-group">
+                                                                <label class="control-label"></label>
+                                                                <input class="form-control" type="text" name="last_name" required="true" placeholder="Result" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-5">
+                                                            <div class="form-group">
+                                                                <label class="control-label">jhoujhohohohyoiu</label>
                                                             </div>
                                                         </div>
                                                         <div class="col-md-5">
                                                             <div class="form-group">
                                                                 <label class="control-label"></label>
-                                                                <input class="form-control" type="text" name="last_name" required="true" placeholder="First Name" />
+                                                                <input class="form-control" type="text" name="last_name" required="true" placeholder="Result" />
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-md-5">
+                                                            <div class="form-group">
+                                                                <label class="control-label">jhoujhohohohyoiu</label>
                                                             </div>
                                                         </div>
                                                         <div class="col-md-5">
                                                             <div class="form-group">
                                                                 <label class="control-label"></label>
-                                                                <input class="form-control" type="text" name="last_name" required="true" placeholder="First Name" />
+                                                                <input class="form-control" type="text" name="last_name" required="true" placeholder="subject name" />
                                                             </div>
                                                         </div>
+
+                                                        <div class="col-md-5">
+                                                            <div class="form-group">
+                                                                <label class="control-label">jhoujhohohohyoiu</label>
+                                                            </div>
+                                                        </div>
+
                                                         <div class="col-md-5">
                                                             <div class="form-group">
                                                                 <label class="control-label"></label>
-                                                                <input class="form-control" type="text" name="last_name" required="true" placeholder="First Name" />
+                                                                <input class="form-control" type="text" name="last_name" required="true" placeholder="Result" />
                                                             </div>
                                                         </div>
+
+                                                        <div class="col-md-5">
+                                                            <div class="form-group">
+                                                                <label class="control-label">jhoujhohohohyoiu</label>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-md-5">
+                                                            <div class="form-group">
+                                                                <label class="control-label"></label>
+                                                                <input class="form-control" type="text" name="last_name" required="true" placeholder="subject name" />
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-md-5">
+                                                            <div class="form-group">
+                                                                <label class="control-label">jhoujhohohohyoiu</label>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-md-5">
+
+                                                            <div class="form-group">
+                                                                <label class="control-label"></label>
+                                                                <input class="form-control" type="text" name="last_name" required="true" placeholder="Result" />
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-md-5">
+                                                            <div class="form-group">
+                                                                <label class="control-label">jhoujhohohohyoiu</label>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-md-5">
+
+                                                            <div class="form-group">
+                                                                <label class="control-label"></label>
+                                                                <input class="form-control" type="text" name="last_name" required="true" placeholder="Result" />
+                                                            </div>
+                                                        </div>
+
                                                     </div>
-                                                    <div class="row justify-content-center">
-                                                        <div class="col-md-10">
-                                                            <div class="form-group">
-                                                                <label class="control-label">
-                                                                    <star>*</star>
-                                                                </label>
-                                                                <input class="form-control" type="text" name="email" email="true" placeholder="ex: hello@creative-tim.com" />
-                                                            </div>
-                                                        </div>
-                                                    </div>
+
                                                 </div>
 
 
@@ -491,7 +643,7 @@
          <!--   <footer class="footer">
                 <div class="container">
                     <nav>
-                        <ul class="footer-menu">
+                        <ul class="footer=-menu">
                             <li>
                                 <a href="#">
                                     Home
