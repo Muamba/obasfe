@@ -302,6 +302,7 @@ demo = {
         $('.card-wizard').bootstrapWizard({
             'tabClass': 'nav nav-pills',
             'nextSelector': '.btn-next',
+            'backSelector': '.btn-back',
             'previousSelector': '.btn-previous',
 
             onNext: function(tab, navigation, index) {
