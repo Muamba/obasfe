@@ -568,7 +568,7 @@ input:focus {
     width: 260px;
     display: block;
     z-index: 1;
-    color: #fff;
+    color: #ffff00;
     font-weight: 200;
     background-size: cover;
     background-position: center center;
@@ -622,7 +622,7 @@ input:focus {
     font-weight: 400;
     line-height: 30px;
     white-space: nowrap;
-    color: #FFFFFF;
+    color: #ffff00;
     overflow: hidden;
 }
 
@@ -650,21 +650,22 @@ input:focus {
     width: 260px;
     z-index: 4;
     padding-bottom: 100px;
+    background-color: #006837;
+    /*this is where i changed the css*/
 }
 
 .sidebar .sidebar-wrapper .nav .nav-item [data-toggle="collapse"]~div .nav .nav-item .nav-link {
-    background: transparent;
     padding-left: 55px;
     text-transform: capitalize;
     padding: 5px 15px 5px 15px;
-    font-weight: 400;
+    font-weight: 100;
     font-size: 14px;
 }
 
 .sidebar .sidebar-wrapper .nav .nav-item [data-toggle="collapse"]~div .nav .nav-item:hover .nav-link,
 .sidebar .sidebar-wrapper .nav .nav-item [data-toggle="collapse"]~div .nav .nav-item:focus .nav-link,
 .sidebar .sidebar-wrapper .nav .nav-item [data-toggle="collapse"]~div .nav .nav-item.active .nav-link {
-    background: rgba(255, 255, 255, 0.13);
+    background: rgba(255, 255, 0, 0.13);
 }
 
 .sidebar .sidebar-wrapper .nav .nav-item [data-toggle="collapse"]~div .nav .sidebar-normal {
@@ -679,7 +680,7 @@ input:focus {
     text-transform: uppercase;
     white-space: nowrap;
     position: relative;
-    color: #FFFFFF;
+    color: #ffff00;
     -webkit-transform: translate3d(0px, 0, 0);
     -moz-transform: translate3d(0px, 0, 0);
     -o-transform: translate3d(0px, 0, 0);
@@ -713,7 +714,7 @@ input:focus {
 }
 
 .sidebar .user {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 0, 0.2);
     padding-bottom: 20px;
     margin-top: 20px;
 }
@@ -727,7 +728,10 @@ input:focus {
     margin-right: 11px;
     margin-left: 23px;
     z-index: 5;
-    border: 2px solid rgba(255, 255, 255, 0.3);
+    border: 2px solid rgba(255, 255, 0, 0.3);
+/*rgb(248, 239, 34); this is yellow  or F8EF22
+#0d6936 green
+*/
 }
 
 .sidebar .user .photo img {
@@ -740,7 +744,7 @@ input:focus {
 }
 
 .sidebar .user .info a {
-    color: #FFFFFF;
+    color: #ffff00;
     padding: 8px 14px;
     display: block;
     white-space: nowrap;
@@ -805,7 +809,7 @@ input:focus {
 }
 
 .sidebar .nav .nav-item .nav-link {
-    color: #FFFFFF;
+    color: #ffff00;
     margin: 5px 15px 0px 10px;
     opacity: .86;
     border-radius: 4px;
@@ -818,7 +822,7 @@ input:focus {
 }
 
 .sidebar .nav .nav-item .nav-link:hover {
-    background: rgba(255, 255, 255, 0.13);
+    background: rgba(255, 255, 0, 0.13);
     opacity: 1;
 }
 
@@ -832,14 +836,14 @@ input:focus {
 }
 
 .sidebar .nav .nav-item:not(.collapse .nav-link):hover .nav-link {
-    background: rgba(255, 255, 255, 0.13);
+    background: rgba(255, 255, 0, 0.13);
     opacity: 1;
 }
 
 .sidebar .nav .nav-item.active .nav-link {
-    color: #FFFFFF;
+    color: #ffff00;
     opacity: 1;
-    background: rgba(255, 255, 255, 0.23);
+    background: rgba(255, 255, 0, 0.23);
 }
 
 .sidebar .nav .nav-item.separator {
@@ -865,7 +869,7 @@ input:focus {
 
 .sidebar:before {
     opacity: .33;
-    background: #000000;
+    background: darkgreen;
 }
 
 .sidebar[data-image]:after,
@@ -1364,8 +1368,8 @@ input:focus {
 }
 
 .full-page[data-color="black"]:after {
-    background: #797979;
-    background: -moz-linear-gradient(top, #797979 0%, #797979 100%);
+    background: #ffef17;
+    background: -moz-linear-gradient(top, #ffef17 0%, #797979 100%);
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #797979), color-stop(100%, #797979));
     background: -webkit-linear-gradient(top, #797979 0%, #797979 100%);
     background: -o-linear-gradient(top, #797979 0%, #797979 100%);
