@@ -15,6 +15,88 @@
  */
 
 /*      light colors         */
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body {
+    font-family: 'Roboto', sans-serif
+}
+
+	
+.main-section {
+
+	
+    padding: 0;
+    margin-top: -150px;
+margin-right: -100px;
+padding-left: 20px;
+padding-right: 20px;
+
+}
+
+.modal-content {
+	background-color: #3e8068;
+	opacity: .8;
+	padding: 0 18px;
+	border-radius: 10px;
+}
+.user-img img {
+	margin: 60px 0 0 0;
+	width: 200px;
+}
+h3{
+    
+    color: white;
+    padding: 0 0 -10px 0;
+}
+.user-img {
+	margin-top: -60px;
+	margin-bottom: 45px;
+}
+.form-group {
+	margin-bottom: 25px;
+}
+.form-group input {
+	height: 42px;
+	border-radius: 5px;
+	border: 0;
+	font-size: 18px;
+	letter-spacing: 2px;
+	padding-left: 54px;
+}
+.form-group::before {
+	font-family: 'Font Awesome\ 5 Free';
+	content: "\f1fa";
+	position: absolute;
+	font-size: 22px;
+	left: 28px;
+	padding-top: 4px;
+	color: #555e60;
+}
+.form-group:last-of-type::before {
+	content: "\f023";
+}
+.form-input button {
+	width: 40%;
+	margin: 5px 0 25px;
+}
+.btn-success {
+	background-color: #1c6288;
+	font-size: 19px;
+	border-radius: 5px;
+	padding: 7px 14px;
+	border: 1px solid #daf1ff;
+}
+.btn-success:hover {
+	background-color: #13445e;
+	border: 1px solid #daf1ff;
+}
+.forgot {
+	padding: 5px 0 25px;
+}
+.forgot a {
+	color: #daf1ff;
+}
+
 
 @keyframes spin {
     from {
@@ -301,8 +383,10 @@ blockquote {
 body,
 .wrapper {
     min-height: 100vh;
-    position: relative;
-}
+    position: relative;}
+     
+   
+
 
 a {
     color: #23CCEF;
@@ -1973,9 +2057,9 @@ fieldset[disabled] .btn-primary.active {
 }
 
 .btn-success {
-    border: 1px solid #87CB16;
-    color: #FFFFFF;
-    background-color: #87CB16;
+    border: 1px solid #ffea00;
+    color: #006837;
+    background-color: #ffea00;
     cursor: pointer;
 }
 
@@ -2462,7 +2546,7 @@ fieldset[disabled] .btn-neutral.active {
 }
 
 .btn-wd {
-    min-width: 140px;
+    min-width: 100px;
 }
 
 .btn-group.select {
@@ -4446,8 +4530,9 @@ fieldset[disabled] .form-control {
 }
 
 .footer {
-    background-color: #FFFFFF;
+    background-color: #ffea00;
     width: 100%;
+   
 }
 
 .footer .footer-menu {
