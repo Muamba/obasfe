@@ -2114,6 +2114,11 @@ fieldset[disabled] .btn-info.active {
     border-color: #23CCEF;
 }
 
+/*the class .file below refers to the background color of the fields in the last form*/
+#customFile{
+    background-color:#FFFFFF ;
+}
+
 .btn-info.btn-outline {
     color: #23CCEF;
     background-color: transparent;
