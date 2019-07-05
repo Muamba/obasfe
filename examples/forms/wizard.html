@@ -28,7 +28,7 @@
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-md-8 ml-auto mr-auto">
-                                <form id="wizardForm" method="" action="" style="margin-top: 15%;">
+                                <form id="wizardForm" method="" action="" style="margin-top: 5%;">
                                     <div class="card card-wizard"style=" background-color: #468771;opacity: 0.8;filter: alpha(opacity=70)">
                                         <div class="card-header "style=" background-color: #468771">
                                             <h3 class="card-title text-center">
@@ -40,7 +40,7 @@
                                         <div class="card-body " >
 
 
-                                            <ul class="nav nav-tabs" >
+                                            <ul class="nav nav-tabs" style="border-color: #468771; width: 0px; height: 0px; margin-top: 0px;margin-bottom: 0px"  >
                                                 <li class="nav-item">
                                                     <a class="nav-link active" href="#tab1" data-toggle="tab" role="tab" aria-controls="tab1" aria-selected="true" style=" background-color: #468771"></a>
                                                 </li>
@@ -68,121 +68,144 @@
                                                 </li>
                                             </ul>
 
+
                                             <div class="tab-content">
                                                 <div class="tab-pane fade show active" id="tab1" role="tabpanel">
-                                                    <h2 class="text-center" style="color: #fcf8e3; margin-top: 1px" >Personal details</h2>
+                                                    <h2 class="text-center" style="color: #fcf8e3;height: 20px ">Personal details</h2>
+
+                                                    <div class="text-center" style="margin-top: 0px;margin-bottom: 0px" ><img src="line.png" alt="Logo" style="width: 245px; height: 5px; " ></div>
+
+                                                    <h6 class="text-center"style="color: #fcf8e3; margin-top: 2%">Gender</h6>
                                                     <div class="row justify-content-center">
-                                                        <div class="col-md-5 ">
-                                                            <div class="form-group">
-                                                                <label class="control-label"></label>
-                                                                <input class="form-control" type="text" name="first_name" placeholder="Surname" />
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-5">
-                                                            <div class="form-group">
-                                                                <label class="control-label"></label>
-                                                                <input class="form-control" type="text" name="last_name" required="true" placeholder="First Name" />
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-5">
-                                                            <div class="form-group">
-                                                                <label class="control-label"></label>
-                                                                <input class="form-control" type="text" name="last_name" required="true" placeholder="First Name" />
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-5">
-                                                            <div class="form-group">
-                                                                <label class="control-label"></label>
-                                                                <input class="form-control" type="text" name="last_name" required="true" placeholder="First Name" />
-                                                            </div>
-                                                        </div>
+
+                                                        <label class="form-check-label " style="color: #fcf8e3">
+                                                            <input class="form-check-input" type="radio" name="exampleRadio" id="exampleRadios2" value="option2" checked>
+                                                            <span class="form-check-sign"></span>
+                                                            Male
+                                                            <label class="form-check-label"style="color: #fcf8e3">
+                                                                <input class="form-check-input " type="radio" name="exampleRadio" id="exampleRadios1" value="option1">
+                                                                <span class="form-check-sign"></span>
+                                                                Female
+                                                            </label>
+
+
                                                     </div>
                                                     <div class="row justify-content-center">
+
+                                                        <div class="col-md-10 ">
+                                                            <div class="form-group">
+                                                            <input class="form-control " type="text"  name="Surname" required="true" placeholder="Surname" />
+                                                            </div>
+                                                        </div>
+
+
                                                         <div class="col-md-10">
                                                             <div class="form-group">
-                                                                <label class="control-label">
-                                                                    <star>*</star>
-                                                                </label>
-                                                                <input class="form-control" type="text" name="email" email="true" placeholder="ex: hello@creative-tim.com" />
+                                                            <input class="form-control" type="text" name="Last_name" required="true" placeholder="Lastname" />
                                                             </div>
                                                         </div>
+
+
+                                                        <div class="col-md-10">
+                                                            <div class="form-group">
+                                                            <input type="date" class="form-control datepicker"  placeholder="Date Picker Here" />
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-md-10">
+                                                            <div class="form-group">
+                                                            <input class="form-control" type="text" name="number"  placeholder="ID Number" />
+                                                            </div>
+                                                        </div>
+
+
+
+                                                        <div class="col-md-10">
+                                                            <div class="form-group ">
+                                                                <select name="Race" class="selectpicker" data-title="Race" data-style="btn-default btn-outline" data-menu-style="dropdown-blue">
+                                                                    <option value="id">Black</option>
+                                                                    <option value="ms">White</option>
+                                                                    <option value="ca">Indian</option>
+                                                                    <option value="da">Coloured</option>
+
+                                                                </select>
+                                                            </div>
+                                                        </div>
+
+
+
+
+
                                                     </div>
+
                                                 </div>
 
 
 
 
 
+                                                <!-- second Residential details tab
+                                                 - we getting the physical address
+                                                 - city
+                                                 - postal code
+                                                  -->
 
 
                                                 <div class="tab-pane fade" id="tab2" role="tabpanel">
-                                                    <h2 class="text-center" style="color: #fcf8e3">Residential Details</h2>
+                                                    <div><h2 class="text-center" style="color: #fcf8e3; margin-top: 0px; height: auto ">Residential details</h2></div>
+
+                                                    <div class="text-center" style="margin-top: 0%;margin-bottom: 0px; "  ><img src="line.png" alt="Logo" style="width: 245px; height: 5px; "></div>
                                                     <div class="row justify-content-center">
                                                         <div class="col-md-10">
-                                                            <div class="form-group">
-                                                                
-                                                                <input class="form-control" type="text" name="website" url="true" placeholder="Physical Address" />
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-10">
+
                                                                 <div class="form-group">
-                                                                    
-                                                                    <input class="form-control" type="text" name="website" url="true" placeholder="City" />
+
+                                                                    <input class="form-control" type="text" name="Physical address" placeholder="Physical address" />
                                                                 </div>
-                                                            </div>
-                                                            <div class="col-md-10">
-                                                                    <div class="form-group">
-                                                                        
-                                                                        <input class="form-control" type="text" name="website" url="true" placeholder="Postal code" />
+
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="row justify-content-center">
+                                                        <div class="col-md-10">
+
+                                                                <div class="form-group">
+
+                                                                        <input class="form-control" type="text" name="City" placeholder="City" />
                                                                     </div>
+
+                                                            </div>
+                                                    </div>
+                                                    <div class="row justify-content-center">
+                                                        <div class="col-md-10">
+
+                                                                <div class="form-group">
+
+                                                                        <input class="form-control" type="number" name="Postal Code" placeholder="Postal Code" />
                                                                 </div>
-                                                    </div>
-                                                    
-                                                          
-                                                                
-                                                                    
-                                            
-                                                              
-                                                    <div class="row justify-content-center">
-                                                        <div class="col-md-5">
-                                                            <div class="form-group">
-                                                                
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-5">
-                                                            <div class="form-group">
-                                                                
-                                                                </label>
-                                                                
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="row justify-content-center">
-                                                        <div class="col-md-5">
-                                                            <div class="form-group">
-                                                                
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-5">
-                                                            <div class="form-group">
-                                                                
-                                                            </div>
+
                                                         </div>
                                                     </div>
                                                 </div>
 
+
+                                                <!-- Third Next of kin Contact Details tab
+                                                 ** we getting (input)
+                                                 - Province
+                                                 - Development
+
+                                                  -->
 
 
                                                 <div class="tab-pane fade " id="tab3" role="tabpanel">
-                                                    <h2 class="text-center" style="color: #fcf8e3">Next of kin Contact Details</h2>
+                                                    <h2 class="text-center" style="color: #fcf8e3;height: auto ">Next of kin Contact Details</h2>
+                                                    <div class="text-center" style="margin-top: 0px;margin-bottom: 0px" ><img src="line.png" alt="Logo" style="width: 245px; height: 5px; " ></div>
 
                                                     <div class="row justify-content-center">
                                                         <div class="col-md-10">
                                                             <div class="form-group">
-                                                                <label class="control-label">
-                                                                    <star>*</star>
-                                                                </label>
-                                                                <input class="form-control" type="text" name="first_name" placeholder="Name" />
+
+                                                                <input class="form-control" type="text" name="name" placeholder="Name" />
                                                             </div>
                                                         </div>
                                                     </div>
@@ -191,10 +214,8 @@
                                                     <div class="row justify-content-center">
                                                         <div class="col-md-10">
                                                             <div class="form-group">
-                                                                <label class="control-label">
-                                                                    <star>*</star>
-                                                                </label>
-                                                                <input class="form-control" type="text" name="first_name" placeholder="Relationship" />
+
+                                                                <input class="form-control" type="text" name="Relationship" placeholder="Relationship" />
                                                             </div>
                                                         </div>
                                                     </div>
@@ -202,24 +223,23 @@
                                                     <div class="row justify-content-center">
                                                         <div class="col-md-10">
                                                             <div class="form-group">
-                                                                <label class="control-label">
-                                                                    <star>*</star>
-                                                                </label>
+
                                                                <!-- <input class="form-control" type="text" name="email" email="true" placeholder="ex: hello@creative-tim.com" /> -->
-                                                                <input class="form-control" type="text" name="first_name" placeholder="Cellphone" />
+                                                                <input class="form-control" type="text" name="phone_number" placeholder="Cellphone" />
                                                             </div>
                                                         </div>
                                                     </div>
 
 
 
+
+
                                                     <div class="row justify-content-center">
                                                         <div class="col-md-10">
                                                             <div class="form-group">
-                                                                <label class="control-label">
-                                                                    <star>*</star>
-                                                                </label>
-                                                                <input class="form-control" type="text" name="email" email="true" placeholder="ex: hello@creative-tim.com" />
+
+                                                                <input class="form-control" type="text" name="email" email="true" placeholder="ex: email address" />
+                                                                <star>*</star>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -227,214 +247,333 @@
 
 
 
+                                                <!-- fourth tab District Municipality tab
+                                                 ** we getting (input)
+                                                 - Province
+                                                 - Development
+
+                                                  -->
 
 
                                                 <div class="tab-pane fade " id="tab4" role="tabpanel">
-                                                    <h2 class="text-center" style="color: #fcf8e3">Next of kin Contact Details</h2>
+                                                    <h2 class="text-center" style="color: #fcf8e3;height: auto ">District Municipality</h2>
+                                                    <div class="text-center" style="margin-top: 0px;margin-bottom: 0px" ><img src="line.png" alt="Logo" style="width: 245px; height: 5px; " ></div>
+
+
                                                     <div class="row justify-content-center">
-                                                        <div class="col-md-5 ">
-                                                            <div class="form-group">
-                                                                <label class="control-label"></label>
-                                                                <input class="form-control" type="text" name="first_name" placeholder="Surname" />
-                                                            </div>
-                                                        </div>
                                                         <div class="col-md-5">
                                                             <div class="form-group">
-                                                                <label class="control-label"></label>
-                                                                <input class="form-control" type="text" name="last_name" required="true" placeholder="First Name" />
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-5">
-                                                            <div class="form-group">
-                                                                <label class="control-label"></label>
-                                                                <input class="form-control" type="text" name="last_name" required="true" placeholder="First Name" />
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-5">
-                                                            <div class="form-group">
-                                                                <label class="control-label"></label>
-                                                                <input class="form-control" type="text" name="last_name" required="true" placeholder="First Name" />
+
+                                                                <select name="cities" class="selectpicker" data-title="Province" data-style="btn-default btn-outline" data-menu-style="dropdown-blue" >
+                                                                    <option value="id">Eastern Cape</option>
+                                                                    <option value="ms">Free State</option>
+                                                                    <option value="ca">Gauteng</option>
+                                                                    <option value="da">KwaZulu-Natal</option>
+                                                                    <option value="de">Limpopo</option>
+                                                                    <option value="en">Mpumalanga</option>
+                                                                    <option value="es">Northern Cape</option>
+                                                                    <option value="el">North-West</option>
+                                                                    <option value="fr">Western Cape</option>
+                                                                    <option value="it">QwaQwa</option>
+                                                                    <option value="hu">Transkei</option>
+                                                                    <option value="nl">Nederlands</option>
+                                                                </select>
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div class="row justify-content-center">
-                                                        <div class="col-md-10">
+                                                        <div class="col-md-5">
                                                             <div class="form-group">
-                                                                <label class="control-label">
-                                                                    <star>*</star>
-                                                                </label>
-                                                                <input class="form-control" type="text" name="email" email="true" placeholder="ex: hello@creative-tim.com" />
+
+                                                                <select name="cities" class="selectpicker" data-title="Province" data-style="btn-default btn-outline" data-menu-style="dropdown-blue" placeholder="Province">
+                                                                    <option value="id">Eastern Cape</option>
+                                                                    <option value="ms">Free State</option>
+                                                                    <option value="ca">Gauteng</option>
+                                                                    <option value="da">KwaZulu-Natal</option>
+                                                                    <option value="de">Limpopo</option>
+                                                                    <option value="en">Mpumalanga</option>
+                                                                    <option value="es">Northern Cape</option>
+                                                                    <option value="el">North-West</option>
+                                                                    <option value="fr">Western Cape</option>
+                                                                    <option value="it">QwaQwa</option>
+                                                                    <option value="hu">Transkei</option>
+                                                                    <option value="nl">Nederlands</option>
+                                                                </select>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                </div>
+                                            </div>
+
+
+
+
+                                                <!-- fith tab Matric.... tab
+                                             ** we getting (input)
+                                             - subjects
+                                             - results
+
+                                              -->
 
 
 
                                                 <div class="tab-pane fade " id="tab5" role="tabpanel">
-                                                    <h2 class="text-center" style="color: #fcf8e3">Next of kin Contact Details</h2>
+                                                    <h2 class="text-center" style="color: #fcf8e3;height: 10px">Subjects form</h2>
+                                                    <div class="text-center" style="margin-top: 0px;margin-bottom: 0px" ><img src="line.png" alt="Logo" style="width: 245px; height: 5px; " ></div>
+
+
+
+                                                    <div class="row justify-content-center">
+                                                        <div class="col-md-5">
+                                                            <div class="form-group">
+
+                                                                <select name="cities" class="selectpicker" data-title="Application Type" data-style="btn-default btn-outline" data-menu-style="dropdown-blue" >
+                                                                    <option value="id">Student</option>
+                                                                    <option value="ms">matric</option>
+
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
                                                     <div class="row justify-content-center">
                                                         <div class="col-md-5 ">
                                                             <div class="form-group">
-                                                                <label class="control-label"></label>
-                                                                <input class="form-control" type="text" name="first_name" placeholder="Surname" />
+
+                                                                <input class="form-control" type="text" name="subject_1" placeholder="subject name" />
                                                             </div>
                                                         </div>
                                                         <div class="col-md-5">
                                                             <div class="form-group">
-                                                                <label class="control-label"></label>
-                                                                <input class="form-control" type="text" name="last_name" required="true" placeholder="First Name" />
+
+                                                                <input class="form-control" type="number" name="Result_1" required="true" placeholder="Result" />
                                                             </div>
                                                         </div>
                                                         <div class="col-md-5">
                                                             <div class="form-group">
-                                                                <label class="control-label"></label>
-                                                                <input class="form-control" type="text" name="last_name" required="true" placeholder="First Name" />
+
+                                                                <input class="form-control" type="text" name="subject_2" required="true" placeholder="subject name" />
                                                             </div>
                                                         </div>
                                                         <div class="col-md-5">
                                                             <div class="form-group">
-                                                                <label class="control-label"></label>
-                                                                <input class="form-control" type="text" name="last_name" required="true" placeholder="First Name" />
+
+                                                                <input class="form-control" type="number" name="Result_2" required="true" placeholder="Result" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-5">
+                                                            <div class="form-group">
+
+                                                                <input class="form-control" type="text" name="subject_3" required="true" placeholder="subject name" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-5">
+                                                            <div class="form-group">
+
+                                                                <input class="form-control" type="number" name="Result_3" required="true" placeholder="Result" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-5">
+                                                            <div class="form-group">
+
+                                                                <input class="form-control" type="text" name="subject_4" required="true" placeholder="subject name" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-5">
+                                                            <div class="form-group">
+
+                                                                <input class="form-control" type="number" name="Result_4" required="true" placeholder="Result" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-5">
+                                                            <div class="form-group">
+
+                                                                <input class="form-control" type="text" name="subject_5" required="true" placeholder="subject name" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-5">
+                                                            <div class="form-group">
+
+                                                                <input class="form-control" type="number" name="Result_5" required="true" placeholder="Result" />
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="row justify-content-center">
-                                                        <div class="col-md-10">
-                                                            <div class="form-group">
-                                                                <label class="control-label">
-                                                                    <star>*</star>
-                                                                </label>
-                                                                <input class="form-control" type="text" name="email" email="true" placeholder="ex: hello@creative-tim.com" />
-                                                            </div>
-                                                        </div>
-                                                    </div>
+
                                                 </div>
 
+
+                                                <!-- sixth tab Contact Details.... tab
+                                             ** we getting (input)
+                                             - subjects
+                                             - results
+
+                                              -->
 
                                                 <div class="tab-pane fade " id="tab6" role="tabpanel">
-                                                    <h2 class="text-center" style="color: #fcf8e3">Next of kin Contact Details</h2>
+
+                                                    <h2 class="text-center" style="color: #fcf8e3;height: auto ">Contact Details</h2>
+                                                    <div class="text-center" style="margin-top: 0px;margin-bottom: 0px" ><img src="line.png" alt="Logo" style="width: 245px; height: 5px; " ></div>
+
+
                                                     <div class="row justify-content-center">
                                                         <div class="col-md-5 ">
                                                             <div class="form-group">
                                                                 <label class="control-label"></label>
-                                                                <input class="form-control" type="text" name="first_name" placeholder="Surname" />
+                                                                <input class="form-control" type="number" name="phone_number" required="true" placeholder="Cell Phone" />
                                                             </div>
                                                         </div>
                                                         <div class="col-md-5">
                                                             <div class="form-group">
                                                                 <label class="control-label"></label>
-                                                                <input class="form-control" type="text" name="last_name" required="true" placeholder="First Name" />
+                                                                <input class="form-control" type="number" name="phone_number2" placeholder="Alternative Number" />
                                                             </div>
                                                         </div>
                                                         <div class="col-md-5">
                                                             <div class="form-group">
                                                                 <label class="control-label"></label>
-                                                                <input class="form-control" type="text" name="last_name" required="true" placeholder="First Name" />
+                                                                <input class="form-control" type="email" name="last_name" required="false" placeholder="Alternative email" />
                                                             </div>
                                                         </div>
                                                         <div class="col-md-5">
                                                             <div class="form-group">
                                                                 <label class="control-label"></label>
-                                                                <input class="form-control" type="text" name="last_name" required="true" placeholder="First Name" />
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="row justify-content-center">
-                                                        <div class="col-md-10">
-                                                            <div class="form-group">
-                                                                <label class="control-label">
-                                                                    <star>*</star>
-                                                                </label>
-                                                                <input class="form-control" type="text" name="email" email="true" placeholder="ex: hello@creative-tim.com" />
+                                                                <input class="form-control" type="number" name="student_number" required="true" placeholder="Student Number" />
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
 
 
+                                                <!-- sseventh tab Contact Details.... tab
+                                            ** we getting (input)
+                                            - subjects
+                                            - results
+
+                                             -->
 
 
 
                                                 <div class="tab-pane fade " id="tab7" role="tabpanel">
-                                                    <h2 class="text-center" style="color: #fcf8e3">Next of kin Contact Details</h2>
+
+                                                    <h2 class="text-center" style="color: #fcf8e3;height: auto ">Course Details</h2>
+                                                    <div class="text-center" style="margin-top: 0px;margin-bottom: 0px" ><img src="line.png" alt="Logo" style="width: 245px; height: 5px; " ></div>
+
+
+
                                                     <div class="row justify-content-center">
-                                                        <div class="col-md-5 ">
-                                                            <div class="form-group">
-                                                                <label class="control-label"></label>
-                                                                <input class="form-control" type="text" name="first_name" placeholder="Surname" />
-                                                            </div>
-                                                        </div>
                                                         <div class="col-md-5">
                                                             <div class="form-group">
-                                                                <label class="control-label"></label>
-                                                                <input class="form-control" type="text" name="last_name" required="true" placeholder="First Name" />
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-5">
-                                                            <div class="form-group">
-                                                                <label class="control-label"></label>
-                                                                <input class="form-control" type="text" name="last_name" required="true" placeholder="First Name" />
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-5">
-                                                            <div class="form-group">
-                                                                <label class="control-label"></label>
-                                                                <input class="form-control" type="text" name="last_name" required="true" placeholder="First Name" />
+
+                                                                <select name="cities" class="selectpicker" data-title="Do you have any outstanding Debt" data-style="btn-default btn-outline" data-menu-style="dropdown-blue" placeholder="Do you have any outstanding Debt">
+                                                                    <option value="id">Yes</option>
+                                                                    <option value="ms">No</option>
+
+                                                                </select>
                                                             </div>
                                                         </div>
                                                     </div>
+
+
                                                     <div class="row justify-content-center">
-                                                        <div class="col-md-10">
+                                                        <div class="col-md-5">
                                                             <div class="form-group">
-                                                                <label class="control-label">
-                                                                    <star>*</star>
-                                                                </label>
-                                                                <input class="form-control" type="text" name="email" email="true" placeholder="ex: hello@creative-tim.com" />
+
+                                                                <select name="cities" class="selectpicker" data-title="Intent study field" data-style="btn-default btn-outline" data-menu-style="dropdown-blue" placeholder="Intent study field">
+                                                                    <option value="id">Engineering and technology</option>
+                                                                    <option value="ms">Agriculture</option>
+                                                                    <option value="id">Business</option>
+                                                                    <option value="ms">Education</option>
+                                                                    <option value="id">Divinity</option>
+                                                                    <option value="ms">Agriculture</option>
+                                                                    <option value="id">History</option>
+                                                                    <option value="ms">Economics</option>
+                                                                    <option value="id">Geology</option>
+                                                                    <option value="ms">Zoology</option>
+                                                                    <option value="id">Psychology</option>
+                                                                    <option value="ms">Chemistry</option>
+
+                                                                </select>
                                                             </div>
                                                         </div>
                                                     </div>
+
+                                                    <div class="row justify-content-center">
+                                                        <div class="col-md-5">
+                                                            <div class="form-group">
+
+                                                                <select name="cities" class="selectpicker" data-title="Duration" data-style="btn-default btn-outline" required="true" data-menu-style="dropdown-blue" placeholder="Duration">
+                                                                    <option value="id">1 Year</option>
+                                                                    <option value="ms">2 Year</option>
+                                                                    <option value="id">3 Year</option>
+                                                                    <option value="ms">4 Year</option>
+                                                                    <option value="id">5 Year</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
                                                 </div>
 
 
+
+
+                                                <!-- heighth tab pload Document.... tab
+                                            ** we getting (input)
+                                            - subjects
+                                            - results
+
+                                             -->
+
                                                 <div class="tab-pane fade " id="tab8" role="tabpanel">
-                                                    <h2 class="text-center" style="color: #fcf8e3">Next of kin Contact Details</h2>
+                                                    <h2 class="text-center" style="color: #fcf8e3;height: 20px ">Upload Document</h2>
+                                                    <div class="text-center" style="margin-top: 0px;margin-bottom: 0px" ><img src="line.png" alt="Logo" style="width: 245px; height: 5px; " ></div>
+
+
+
                                                     <div class="row justify-content-center">
-                                                        <div class="col-md-5 ">
-                                                            <div class="form-group">
-                                                                <label class="control-label"></label>
-                                                                <input class="form-control" type="text" name="first_name" placeholder="Surname" />
-                                                            </div>
-                                                        </div>
                                                         <div class="col-md-5">
-                                                            <div class="form-group">
-                                                                <label class="control-label"></label>
-                                                                <input class="form-control" type="text" name="last_name" required="true" placeholder="First Name" />
-                                                            </div>
+                                                            <star>*</star> <label class="custom-file-label"  style="color: #fcf8e3" for="customFile">Id</label>
+                                                            <input type="file" class="form-control" id="customFile" required="true" name="filename"placeholder="First Name"/>
                                                         </div>
+
                                                         <div class="col-md-5">
-                                                            <div class="form-group">
-                                                                <label class="control-label"></label>
-                                                                <input class="form-control" type="text" name="last_name" required="true" placeholder="First Name" />
-                                                            </div>
+                                                            <star>*</star><label class="custom-file-label"  style="color: #fcf8e3" for="customFile">Parent/Guadian Id</label>
+                                                            <input type="file" class="form-control" id="customFile" required="true" name="filename"placeholder="First Name"/>
                                                         </div>
+
                                                         <div class="col-md-5">
-                                                            <div class="form-group">
-                                                                <label class="control-label"></label>
-                                                                <input class="form-control" type="text" name="last_name" required="true" placeholder="First Name" />
-                                                            </div>
+                                                            <star>*</star> <label class="custom-file-label"  style="color: #fcf8e3" for="customFile">Academic Transcript</label>
+                                                            <input type="file" class="form-control" id="customFile" required="true" name="filename"placeholder="First Name"/>
                                                         </div>
+
+                                                        <div class="col-md-5">
+                                                            <star>*</star><label class="custom-file-label"  style="color: #fcf8e3" for="customFile">Acceptence letter</label>
+                                                            <input type="file" class="form-control" id="customFile" required="true" name="filename"placeholder="First Name"/>
+                                                        </div>
+
+                                                        <div class="col-md-5">
+                                                            <star>*</star> <label class="custom-file-label"  style="color: #fcf8e3" for="customFile">Pay Slip</label>
+                                                            <input type="file" class="form-control" id="customFile" required="true" name="filename"placeholder="First Name"/>
+                                                        </div>
+
+                                                        <div class="col-md-5">
+                                                            <star>*</star><label class="custom-file-label"  style="color: #fcf8e3" for="customFile">SASSA</label>
+                                                            <input type="file" class="form-control" id="customFile" required="true" name="filename"placeholder="First Name"/>
+                                                        </div>
+
+                                                        <div class="col-md-5">
+                                                            <star>*</star> <label class="custom-file-label"  style="color: #fcf8e3" for="customFile">Affidavit</label>
+                                                            <input type="file" class="form-control" id="customFile" required="true" name="filename"placeholder="First Name"/>
+                                                        </div>
+
+                                                        <div class="col-md-5">
+                                                            <star>*</star><label class="custom-file-label"  style="color: #fcf8e3" for="customFile">Proof of Residence</label>
+                                                            <input type="file" class="form-control" id="customFile" required="true" name="filename"placeholder="First Name"/>
+                                                        </div>
+
+
+
                                                     </div>
-                                                    <div class="row justify-content-center">
-                                                        <div class="col-md-10">
-                                                            <div class="form-group">
-                                                                <label class="control-label">
-                                                                    <star>*</star>
-                                                                </label>
-                                                                <input class="form-control" type="text" name="email" email="true" placeholder="ex: hello@creative-tim.com" />
-                                                            </div>
-                                                        </div>
-                                                    </div>
+
                                                 </div>
 
 
@@ -451,8 +590,8 @@
                                             </div>
                                         </div>
                                         <div class="card-footer text-center">
-                                            <button type="button" class="btn btn-default btn-wd btn-back pull-left" style="background-color: #468771; border-color: #ffff01;">Back</button>
-                                            <button type="button" class="btn btn-info btn-wd btn-next pull-right" style="background-color: #ffff01; border-color: #468771;color: #1a1a1a ">Next</button>
+                                            <button type="button" class="btn btn-default btn-wd btn-back pull-left" style="background-color: #468771; border-color: #ffff01; ">Back</button>
+                                            <button type="button" class="btn btn-info btn-wd btn-next pull-right" style="background-color: #ffff01; border-color: #468771;color: #1a1a1a">Next</button>
                                             <button type="button" class="btn btn-info btn-wd btn-finish pull-right"  onclick="onFinishWizard()">Finish</button>
                                             <div class="clearfix"></div>
                                         </div>
@@ -468,7 +607,7 @@
          <!--   <footer class="footer">
                 <div class="container">
                     <nav>
-                        <ul class="footer-menu">
+                        <ul class="footer=-menu">
                             <li>
                                 <a href="#">
                                     Home
