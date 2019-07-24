@@ -1311,8 +1311,8 @@ demo = {
         color = Math.floor((Math.random() * 4) + 1);
 
         $.notify({
-            icon: "nc-icon nc-app",
-            message: "Welcome to <b>Light Bootstrap Dashboard</b> - a beautiful freebie for every web developer."
+            icon: "nc-icon nc-satisfied",
+            message: "Welcome to <b>OBAS</b> - Motsepe Foundation supports mandela's centenary."
 
         }, {
             type: type[color],
