@@ -136,7 +136,7 @@
 
                     <li class="nav-item ">
                         <div class="logo">
-                            <a class="nav-link">
+                            <a class="nav-link" >
                                 <!-- <i class="nc-icon nc-single-copy-04"></i>-->
 
                             </a>
@@ -325,7 +325,7 @@
                                         <div class="row justify-content-center">
                                             <ul class="nav nav-tabs">
                                                 <li class="nav-item">
-                                                    <a class="nav-link active" href="#tab1" data-toggle="tab" role="tab" aria-controls="tab1" aria-selected="true" style="background-color: #999999;width: 300px; border: #fcf8e3 4px solid">First Tab</a>
+                                                    <a class="nav-link active" href="#tab1" data-toggle="tab" role="tab" aria-controls="tab1" aria-selected="true" style="background-color: #999999;width: 300px; border: #fcf8e3 4px solid">Personal details</a>
                                                 </li>
                                                 <li class="nav-item">
                                                     <a class="nav-link" href="#tab2" data-toggle="tab" role="tab" aria-controls="tab2" aria-selected="true"style="background-color: #999999;width: 300px; border: #fcf8e3 4px solid">Second Tab</a>
@@ -358,131 +358,56 @@
                                         <div class="card " style=" background-color: #006837; border: #006837;">
                                             <div style=" background-color: #006837;" class="card-header ">
                                                 <div style=" background-color: #006837;"class="card-header">
-                                                    <h4 style="color: #ffffff" class="card-title">Edit Profile</h4>
+                                                    <h4 style="color: #ffffff" class="card-title">View Profile</h4>
                                                 </div>
                                             </div>
-                                            <div class="tab-content">
-                                                <div class="tab-pane fade show active" id="tab1" role="tabpanel">
-                                                    <p class="text-center">Please tell us more about yourself.</p>
-                                                    <div class="row justify-content-center">
-                                                        <div class="col-md-5 ">
-                                                            <div class="form-group">
-                                                                <label class="control-label">First Name</label>
-                                                                <input class="form-control" type="text" name="first_name" placeholder="ex: Mike" />
+
+
+
+
+
+                                                <div class="tab-content">
+                                                    <div class="tab-pane fade show active" id="tab1" aria-labelledby="info-tab">
+                                                        <div class="card">
+                                                            <div class="card-header">
+                                                                <h4 class="card-title">Description about product</h4>
+                                                                <p class="card-category">More information here</p>
                                                             </div>
-                                                        </div>
-                                                        <div class="col-md-5">
-                                                            <div class="form-group">
-                                                                <label class="control-label">Last Name</label>
-                                                                <input class="form-control" type="text" name="last_name" required="true" placeholder="ex: Andrew" />
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="row justify-content-center">
-                                                        <div class="col-md-10">
-                                                            <div class="form-group">
-                                                                <label class="control-label">Email
-                                                                    <star>*</star>
-                                                                </label>
-                                                                <input class="form-control" type="text" name="email" email="true" placeholder="ex: hello@creative-tim.com" />
+                                                            <div class="card-body">
+                                                                <p>Larger, yet dramatically thinner. More powerful, but remarkably power efficient. With a smooth metal surface that seamlessly meets the new Retina HD display.</p>
+                                                                <p>The first thing you notice when you hold the phone is how great it feels in your hand. There are no distinct edges. No gaps. Just a smooth, seamless bond of metal and glass that feels like one continuous surface.</p>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                </div>
-                                                <div class="tab-pane fade" id="tab2" role="tabpanel">
-                                                    <h5 class="text-center">Please give us more details about your platform.</h5>
-                                                    <div class="row justify-content-center">
-                                                        <div class="col-md-10">
-                                                            <div class="form-group">
-                                                                <label class="control-label">Your Website
-                                                                    <star>*</star>
-                                                                </label>
-                                                                <input class="form-control" type="text" name="website" url="true" placeholder="ex: http://www.creative-tim.com" />
+                                                    <div class="tab-pane fade" id="tab2" aria-labelledby="info-tab">
+                                                        <div class="card">
+                                                            <div class="card-header">
+                                                                <h4 class="card-title">Location of product</h4>
+                                                                <p class="category">Here is some text</p>
+                                                            </div>
+                                                            <div class="card-body">
+                                                                <p>Another Text. The first thing you notice when you hold the phone is how great it feels in your hand. The cover glass curves down around the sides to meet the anodized aluminum enclosure in a remarkable, simplified design.</p>
+                                                                <p>Larger, yet dramatically thinner.It’s one continuous form where hardware and software function in perfect unison, creating a new generation of phone that’s better by any measure.</p>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="row justify-content-center">
-                                                        <div class="col-md-5">
-                                                            <div class="form-group">
-                                                                <label class="control-label">Framework Type</label>
-                                                                <input class="form-control" type="text" name="framework" placeholder="ex: http://www.creative-tim.com" />
+                                                    <div class="tab-pane fade" id="tab3" aria-labelledby="info-tab">
+                                                        <div class="card">
+                                                            <div class="card-header">
+                                                                <h4 class="card-title">Legal items</h4>
+                                                                <p class="category">More information here</p>
                                                             </div>
-                                                        </div>
-                                                        <div class="col-md-5">
-                                                            <div class="form-group">
-                                                                <label class="control-label">Language
-                                                                    <star>*</star>
-                                                                </label>
-                                                                <select name="cities" class="selectpicker" data-title="Single Select" data-style="btn-default btn-outline" data-menu-style="dropdown-blue">
-                                                                    <option value="id">Bahasa Indonesia</option>
-                                                                    <option value="ms">Bahasa Melayu</option>
-                                                                    <option value="ca">Català</option>
-                                                                    <option value="da">Dansk</option>
-                                                                    <option value="de">Deutsch</option>
-                                                                    <option value="en">English</option>
-                                                                    <option value="es">Español</option>
-                                                                    <option value="el">Eλληνικά</option>
-                                                                    <option value="fr">Français</option>
-                                                                    <option value="it">Italiano</option>
-                                                                    <option value="hu">Magyar</option>
-                                                                    <option value="nl">Nederlands</option>
-                                                                    <option value="no">Norsk</option>
-                                                                    <option value="pl">Polski</option>
-                                                                    <option value="pt">Português</option>
-                                                                    <option value="fi">Suomi</option>
-                                                                    <option value="sv">Svenska</option>
-                                                                    <option value="tr">Türkçe</option>
-                                                                    <option value="is">Íslenska</option>
-                                                                    <option value="cs">Čeština</option>
-                                                                    <option value="ru">Русский</option>
-                                                                    <option value="th">ภาษาไทย</option>
-                                                                    <option value="zh">中文 (简体)</option>
-                                                                    <option value="zh-TW">中文 (繁體)</option>
-                                                                    <option value="ja">日本語</option>
-                                                                    <option value="ko">한국어</option>
-                                                                </select>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="row justify-content-center">
-                                                        <div class="col-md-5">
-                                                            <div class="form-group">
-                                                                <label class="control-label">Bootstrap Version</label>
-                                                                <select name="versions" class="selectpicker" data-title="Single Select" data-style="btn-default btn-outline" data-menu-style="dropdown-blue">
-                                                                    <option selected="" disabled="">- version -</option>
-                                                                    <option value="1.1">Bootstrap 1.1</option>
-                                                                    <option value="2.0">Bootstrap 2.0</option>
-                                                                    <option value="3.0">Bootstrap 3.0</option>
-                                                                    <option value="4.0">Bootstrap 4.0(alpha)</option>
-                                                                    <option value="4.0">Bootstrap 4.0(beta)</option>
-                                                                </select>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-5">
-                                                            <div class="form-group">
-                                                                <label class="control-label">Price</label>
-                                                                <input class="form-control" type="text" name="price" placeholder="ex: 19.00" />
+                                                            <div class="card-body">
+                                                                <p>The first thing you notice when you hold the phone is how great it feels in your hand. The cover glass curves down around the sides to meet the anodized aluminum enclosure in a remarkable, simplified design.</p>
+                                                                <p>Larger, yet dramatically thinner.It’s one continuous form where hardware and software function in perfect unison, creating a new generation of phone that’s better by any measure.</p>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="tab-pane fade" id="tab3" role="tabpanel">
-                                                    <h2 class="text-center text-space">Yuhuuu!
-                                                        <br>
-                                                        <small> Click on "
-                                                            <b>Finish</b>" to join our community</small>
-                                                    </h2>
-                                                </div>
-
-                                                <div class="card-footer text-center">
-
-                                                    <button type="button" class="btn btn-info btn-wd btn-next pull-right">Update</button>
-
-                                                    <div class="clearfix"></div>
-                                                </div>
 
 
-                                        </div>
+
+
                                         </div>
                                     </form>
                                 </div>
