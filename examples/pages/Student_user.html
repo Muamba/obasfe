@@ -325,25 +325,25 @@
                                         <div class="row justify-content-center">
                                             <ul class="nav nav-tabs">
                                                 <li class="nav-item">
-                                                    <a class="nav-link active" href="#tab1" data-toggle="tab" role="tab" aria-controls="tab1" aria-selected="true" style="background-color: #999999;width: 300px; border: #fcf8e3 4px solid">First Tab</a>
+                                                    <a class="nav-link active" href="#tab1" data-toggle="tab" role="tab" aria-controls="tab1" aria-selected="true" style="background-color: #999999;width: 300px; border: #fcf8e3 4px solid">Personal details</a>
                                                 </li>
                                                 <li class="nav-item">
-                                                    <a class="nav-link" href="#tab2" data-toggle="tab" role="tab" aria-controls="tab2" aria-selected="true"style="background-color: #999999;width: 300px; border: #fcf8e3 4px solid">Second Tab</a>
+                                                    <a class="nav-link" href="#tab2" data-toggle="tab" role="tab" aria-controls="tab2" aria-selected="true"style="background-color: #999999;width: 300px; border: #fcf8e3 4px solid">Guardian details</a>
                                                 </li>
                                                 <li class="nav-item">
-                                                    <a class="nav-link" href="#tab3" data-toggle="tab" role="tab" aria-controls="tab3" aria-selected="true"style="background-color: #999999;width: 300px; border: #fcf8e3 4px solid">Third Tab</a>
+                                                    <a class="nav-link" href="#tab3" data-toggle="tab" role="tab" aria-controls="tab3" aria-selected="true"style="background-color: #999999;width: 300px; border: #fcf8e3 4px solid">Residential details</a>
                                                 </li>
                                                 <li class="nav-item">
-                                                    <a class="nav-link active" href="#tab1" data-toggle="tab" role="tab" aria-controls="tab1" aria-selected="true" style="background-color: #999999;width: 300px; border: #fcf8e3 4px solid">First Tab</a>
+                                                    <a class="nav-link" href="#tab4" data-toggle="tab" role="tab" aria-controls="tab3" aria-selected="true"style="background-color: #999999;width: 300px; border: #fcf8e3 4px solid">Subject details</a>
                                                 </li>
                                                 <li class="nav-item">
-                                                    <a class="nav-link" href="#tab2" data-toggle="tab" role="tab" aria-controls="tab2" aria-selected="true"style="background-color: #999999;width: 300px; border: #fcf8e3 4px solid">Second Tab</a>
+                                                    <a class="nav-link" href="#tab5" data-toggle="tab" role="tab" aria-controls="tab5" aria-selected="true"style="background-color: #999999;width: 300px; border: #fcf8e3 4px solid">District and Municipality</a>
                                                 </li>
                                                 <li class="nav-item">
-                                                    <a class="nav-link" href="#tab3" data-toggle="tab" role="tab" aria-controls="tab3" aria-selected="true"style="background-color: #999999;width: 300px; border: #fcf8e3 4px solid">Third Tab</a>
+                                                    <a class="nav-link" href="#tab6" data-toggle="tab" role="tab" aria-controls="tab6" aria-selected="true"style="background-color: #999999;width: 300px; border: #fcf8e3 4px solid">Course details</a>
                                                 </li>
                                                 <li class="nav-item">
-                                                    <a class="nav-link" href="#tab3" data-toggle="tab" role="tab" aria-controls="tab3" aria-selected="true"style="background-color: #999999;width: 300px; border: #fcf8e3 4px solid">Third Tab</a>
+                                                    <a class="nav-link" href="#tab7" data-toggle="tab" role="tab" aria-controls="tab7" aria-selected="true"style="background-color: #999999;width: 300px; border: #fcf8e3 4px solid">Registration details</a>
                                                 </li>
                                             </ul>
                                         </div>
@@ -363,7 +363,8 @@
                                             </div>
                                             <div class="tab-content">
                                                 <div class="tab-pane fade show active" id="tab1" role="tabpanel">
-                                                    <p class="text-center">Please tell us more about yourself.</p>
+                                                   <!-- <p class="text-center">Please tell us more about yourself.</p>-->
+                                                    <h4 style="color: #ffffff" class="text-center">Personel details</h4>
                                                     <div class="row justify-content-center">
                                                         <div class="col-md-5 ">
                                                             <div class="form-group">
@@ -379,99 +380,305 @@
                                                         </div>
                                                     </div>
                                                     <div class="row justify-content-center">
+                                                        <div class="col-md-5">
+                                                            <label class="control-label">Birth day</label>
+                                                            <input type="date" class="form-control datepicker"  placeholder="Date Picker Here" />
+                                                        </div>
+
+                                                    <div class="col-md-5">
+                                                        <div class="form-group">
+                                                            <label class="control-label">Id Number</label>
+                                                            <input class="form-control" type="text" name="number"  placeholder="215954688" />
+                                                        </div>
+                                                    </div>
+                                                    </div>
+                                                    <div class="row justify-content-center">
                                                         <div class="col-md-10">
                                                             <div class="form-group">
-                                                                <label class="control-label">Email
-                                                                    <star>*</star>
-                                                                </label>
+                                                                <label class="control-label">Email</label>
                                                                 <input class="form-control" type="text" name="email" email="true" placeholder="ex: hello@creative-tim.com" />
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
+
+
+
                                                 <div class="tab-pane fade" id="tab2" role="tabpanel">
-                                                    <h5 class="text-center">Please give us more details about your platform.</h5>
+                                                    <h4 style="color: #ffffff" class="text-center">Guardian details</h4>
                                                     <div class="row justify-content-center">
                                                         <div class="col-md-10">
                                                             <div class="form-group">
-                                                                <label class="control-label">Your Website
-                                                                    <star>*</star>
-                                                                </label>
-                                                                <input class="form-control" type="text" name="website" url="true" placeholder="ex: http://www.creative-tim.com" />
+                                                                <label class="control-label">Name</label>
+                                                                <input class="form-control" type="text" name="name" placeholder="Name" />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+
+                                                    <div class="row justify-content-center">
+                                                        <div class="col-md-10">
+                                                            <div class="form-group">
+                                                                <label class="control-label">Relationship</label>
+                                                                <input class="form-control" type="text" name="Relationship" placeholder="Relationship" />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="row justify-content-center">
+                                                        <div class="col-md-10">
+                                                            <div class="form-group">
+                                                                <label class="control-label">Cellphone</label>
+                                                                <!-- <input class="form-control" type="text" name="email" email="true" placeholder="ex: hello@creative-tim.com" /> -->
+                                                                <input class="form-control" type="text" name="phone_number" placeholder="Cellphone" />
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div class="row justify-content-center">
-                                                        <div class="col-md-5">
+                                                        <div class="col-md-10">
                                                             <div class="form-group">
-                                                                <label class="control-label">Framework Type</label>
-                                                                <input class="form-control" type="text" name="framework" placeholder="ex: http://www.creative-tim.com" />
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-5">
-                                                            <div class="form-group">
-                                                                <label class="control-label">Language
-                                                                    <star>*</star>
-                                                                </label>
-                                                                <select name="cities" class="selectpicker" data-title="Single Select" data-style="btn-default btn-outline" data-menu-style="dropdown-blue">
-                                                                    <option value="id">Bahasa Indonesia</option>
-                                                                    <option value="ms">Bahasa Melayu</option>
-                                                                    <option value="ca">Català</option>
-                                                                    <option value="da">Dansk</option>
-                                                                    <option value="de">Deutsch</option>
-                                                                    <option value="en">English</option>
-                                                                    <option value="es">Español</option>
-                                                                    <option value="el">Eλληνικά</option>
-                                                                    <option value="fr">Français</option>
-                                                                    <option value="it">Italiano</option>
-                                                                    <option value="hu">Magyar</option>
-                                                                    <option value="nl">Nederlands</option>
-                                                                    <option value="no">Norsk</option>
-                                                                    <option value="pl">Polski</option>
-                                                                    <option value="pt">Português</option>
-                                                                    <option value="fi">Suomi</option>
-                                                                    <option value="sv">Svenska</option>
-                                                                    <option value="tr">Türkçe</option>
-                                                                    <option value="is">Íslenska</option>
-                                                                    <option value="cs">Čeština</option>
-                                                                    <option value="ru">Русский</option>
-                                                                    <option value="th">ภาษาไทย</option>
-                                                                    <option value="zh">中文 (简体)</option>
-                                                                    <option value="zh-TW">中文 (繁體)</option>
-                                                                    <option value="ja">日本語</option>
-                                                                    <option value="ko">한국어</option>
-                                                                </select>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="row justify-content-center">
-                                                        <div class="col-md-5">
-                                                            <div class="form-group">
-                                                                <label class="control-label">Bootstrap Version</label>
-                                                                <select name="versions" class="selectpicker" data-title="Single Select" data-style="btn-default btn-outline" data-menu-style="dropdown-blue">
-                                                                    <option selected="" disabled="">- version -</option>
-                                                                    <option value="1.1">Bootstrap 1.1</option>
-                                                                    <option value="2.0">Bootstrap 2.0</option>
-                                                                    <option value="3.0">Bootstrap 3.0</option>
-                                                                    <option value="4.0">Bootstrap 4.0(alpha)</option>
-                                                                    <option value="4.0">Bootstrap 4.0(beta)</option>
-                                                                </select>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-5">
-                                                            <div class="form-group">
-                                                                <label class="control-label">Price</label>
-                                                                <input class="form-control" type="text" name="price" placeholder="ex: 19.00" />
+                                                                <label class="control-label">Email Address</label>
+                                                                <input class="form-control" type="text" name="email" email="true" placeholder="ex: email address" />
+
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
+
                                                 <div class="tab-pane fade" id="tab3" role="tabpanel">
-                                                    <h2 class="text-center text-space">Yuhuuu!
-                                                        <br>
-                                                        <small> Click on "
-                                                            <b>Finish</b>" to join our community</small>
-                                                    </h2>
+                                                    <h4 style="color: #ffffff" class="text-center">Guardian details</h4>
+                                                    <div class="row justify-content-center">
+                                                        <div class="col-md-10">
+                                                            <div class="form-group">
+                                                                <label class="control-label">Physical Address</label>
+                                                                <input class="form-control" type="text" name="Physical address" placeholder="32 espoir str GoodWood" />
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="row justify-content-center">
+                                                        <div class="col-md-10">
+                                                            <div class="form-group">
+                                                                <label class="control-label">City</label>
+                                                                <input class="form-control" type="text" name="City" placeholder="Cape Town" />
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="row justify-content-center">
+                                                        <div class="col-md-10">
+                                                            <div class="form-group">
+                                                                <label class="control-label">Postal Code</label>
+                                                                <input class="form-control" type="number" name="Postal Code" placeholder="3205" />
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="tab-pane fade " id="tab4" role="tabpanel">
+                                                    <h4 style="color: #ffffff" class="text-center">Subject details</h4>
+                                                    <div class="row justify-content-center">
+                                                        <div class="col-md-5">
+                                                            <div class="form-group">
+                                                                <label class="control-label">Application Type</label>
+                                                                <select name="cities" class="selectpicker" data-title="Student" data-style="btn-default btn-outline" data-menu-style="dropdown-blue" >
+                                                                    <option value="id">Student</option>
+                                                                    <option value="ms">matric</option>
+
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="row justify-content-center">
+                                                        <div class="col-md-5 ">
+                                                            <div class="form-group">
+                                                                <label class="control-label">Subject 1</label>
+                                                                <input class="form-control" type="text" name="subject_1" placeholder="subject name" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-5">
+                                                            <div class="form-group">
+                                                                <label class="control-label">Result of Subject 1</label>
+                                                                <input class="form-control" type="number" name="Result_1" required="true" placeholder="Result" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-5">
+                                                            <div class="form-group">
+                                                                <label class="control-label">Subject 2</label>
+                                                                <input class="form-control" type="text" name="subject_2" required="true" placeholder="subject name" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-5">
+                                                            <div class="form-group">
+                                                                <label class="control-label">Result of Subject 2</label>
+                                                                <input class="form-control" type="number" name="Result_2" required="true" placeholder="Result" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-5">
+                                                            <div class="form-group">
+                                                                <label class="control-label">Subject 3</label>
+                                                                <input class="form-control" type="text" name="subject_3" required="true" placeholder="subject name" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-5">
+                                                            <div class="form-group">
+                                                                <label class="control-label">Result of Subject 3</label>
+                                                                <input class="form-control" type="number" name="Result_3" required="true" placeholder="Result" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-5">
+                                                            <div class="form-group">
+                                                                <label class="control-label">Subject 4</label>
+                                                                <input class="form-control" type="text" name="subject_4" required="true" placeholder="subject name" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-5">
+                                                            <div class="form-group">
+                                                                <label class="control-label">Result of Subject 4</label>
+                                                                <input class="form-control" type="number" name="Result_4" required="true" placeholder="Result" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-5">
+                                                            <div class="form-group">
+                                                                <label class="control-label">Subject 5</label>
+                                                                <input class="form-control" type="text" name="subject_5" required="true" placeholder="subject name" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-5">
+                                                            <div class="form-group">
+                                                                <label class="control-label">Result of Subject 5</label>
+                                                                <input class="form-control" type="number" name="Result_5" required="true" placeholder="Result" />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="tab-pane fade " id="tab5" role="tabpanel">
+                                                    <h4 style="color: #ffffff" class="text-center">District Municipality</h4>
+                                                    <div class="row justify-content-center">
+                                                        <div class="col-md-5">
+                                                            <div class="form-group">
+
+                                                                <select name="cities" class="selectpicker" data-title="Province" data-style="btn-default btn-outline" data-menu-style="dropdown-blue" >
+                                                                    <option value="id">Eastern Cape</option>
+                                                                    <option value="ms">Free State</option>
+                                                                    <option value="ca">Gauteng</option>
+                                                                    <option value="da">KwaZulu-Natal</option>
+                                                                    <option value="de">Limpopo</option>
+                                                                    <option value="en">Mpumalanga</option>
+                                                                    <option value="es">Northern Cape</option>
+                                                                    <option value="el">North-West</option>
+                                                                    <option value="fr">Western Cape</option>
+                                                                    <option value="it">QwaQwa</option>
+                                                                    <option value="hu">Transkei</option>
+                                                                    <option value="nl">Nederlands</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row justify-content-center">
+                                                        <div class="col-md-5">
+                                                            <div class="form-group">
+
+                                                                <select name="cities" class="selectpicker" data-title="Province" data-style="btn-default btn-outline" data-menu-style="dropdown-blue" placeholder="Province">
+                                                                    <option value="id">Eastern Cape</option>
+                                                                    <option value="ms">Free State</option>
+                                                                    <option value="ca">Gauteng</option>
+                                                                    <option value="da">KwaZulu-Natal</option>
+                                                                    <option value="de">Limpopo</option>
+                                                                    <option value="en">Mpumalanga</option>
+                                                                    <option value="es">Northern Cape</option>
+                                                                    <option value="el">North-West</option>
+                                                                    <option value="fr">Western Cape</option>
+                                                                    <option value="it">QwaQwa</option>
+                                                                    <option value="hu">Transkei</option>
+                                                                    <option value="nl">Nederlands</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="tab-pane fade " id="tab6" role="tabpanel">
+
+                                                    <h4 style="color: #ffffff" class="text-center">Course Details</h4>
+
+                                                    <div class="row justify-content-center">
+                                                        <div class="col-md-5">
+                                                            <div class="form-group">
+                                                                <label class="control-label">Debt</label>
+                                                                <select name="cities" class="selectpicker" data-title="Do you have any outstanding Debt" data-style="btn-default btn-outline" data-menu-style="dropdown-blue" placeholder="Do you have any outstanding Debt">
+                                                                    <option value="id">Yes</option>
+                                                                    <option value="ms">No</option>
+
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row justify-content-center">
+                                                        <div class="col-md-5">
+                                                            <div class="form-group">
+                                                                <label class="control-label">Intent Study Field</label>
+                                                                <select name="cities" class="selectpicker" data-title="Intent study field" data-style="btn-default btn-outline" data-menu-style="dropdown-blue" placeholder="Architecture">
+                                                                    <option value="id">Engineering and technology</option>
+                                                                    <option value="ms">Agriculture</option>
+                                                                    <option value="id">Business</option>
+                                                                    <option value="ms">Education</option>
+                                                                    <option value="id">Divinity</option>
+                                                                    <option value="ms">Agriculture</option>
+                                                                    <option value="id">History</option>
+                                                                    <option value="ms">Economics</option>
+                                                                    <option value="id">Geology</option>
+                                                                    <option value="ms">Zoology</option>
+                                                                    <option value="id">Psychology</option>
+                                                                    <option value="ms">Chemistry</option>
+
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="row justify-content-center">
+                                                        <div class="col-md-5">
+                                                            <div class="form-group">
+                                                                <label class="control-label">Duration</label>
+                                                                <select name="cities" class="selectpicker" data-title="Example: 3" data-style="btn-default btn-outline" required="true" data-menu-style="dropdown-blue" placeholder="Duration">
+                                                                    <option value="id">1 Year</option>
+                                                                    <option value="ms">2 Year</option>
+                                                                    <option value="id">3 Year</option>
+                                                                    <option value="ms">4 Year</option>
+                                                                    <option value="id">5 Year</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="tab-pane fade" id="tab7" role="tabpanel">
+                                                    <h4 style="color: #ffffff" class="text-center">Password Update</h4>
+                                                    <div class="row justify-content-center">
+                                                        <div class="col-md-10">
+                                                            <div class="form-group">
+                                                                <label class="control-label">Previous Password</label>
+                                                                <input class="form-control" type="text" name="name" placeholder="Example: " />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="row justify-content-center">
+                                                        <div class="col-md-10">
+                                                            <div class="form-group">
+                                                                <label class="control-label">New Password</label>
+                                                                <!-- <input class="form-control" type="text" name="email" email="true" placeholder="ex: hello@creative-tim.com" /> -->
+                                                                <input class="form-control" type="text" name="phone_number" placeholder="Cellphone" />
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                 </div>
 
                                                 <div class="card-footer text-center">

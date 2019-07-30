@@ -228,9 +228,9 @@
                                             <th data-field="state" data-checkbox="true"></th>
                                             <th data-field="id" class="text-center">ID</th>
                                             <th data-field="name" data-sortable="true">Name</th>
-                                            <th data-field="salary" data-sortable="true">Salary</th>
-                                            <th data-field="country" data-sortable="true">Country</th>
-                                            <th data-field="city">City</th>
+                                            <th data-field="salary" data-sortable="true">Document description</th>
+                                            <th data-field="country" data-sortable="true">Date</th>
+                                            <th data-field="city">Type</th>
                                             <th data-field="actions" class="td-actions text-right" data-events="operateEvents" data-formatter="operateFormatter">Actions</th>
                                             </thead>
                                             <tbody>
@@ -623,14 +623,38 @@
             'click .view': function(e, value, row, index) {
                 info = JSON.stringify(row);
 
-                swal('You click view icon, row: ', info);
-                console.log(info);
+                //swal('You click view icon, row: ', info);
+                //console.log(info);
+
+                swal({
+                    title: "View document",
+                    text: JSON.stringify(row.name),
+                  //  C:\Users\Nicole Abrahams\go\src\obasfe\assets\img\faces\face-0.jpg
+                    imageUrl: './assets/img/faces/face-0.jpg'
+                });
             },
             'click .edit': function(e, value, row, index) {
                 info = JSON.stringify(row);
+                //alert("espoir");
+               // var file = files[value];
 
-                swal('You click edit icon, row: ', info);
-                console.log(info);
+             //var $fil= $("#upload-file");
+               // swal('You click edit icon, row: ', info);
+               // console.log(info);
+
+                swal({
+                    title: JSON.stringify(row.name),
+                    text: "Edit document",
+                    type: "info",
+                    html:"<input type='file'>",
+                    showCancelButton: true,
+                    closeOnConfirm: false,
+                    showLoaderOnConfirm: true
+                }, function () {
+                    setTimeout(function () {
+                        swal("Document Uploaded");
+                    }, 2000);
+                });
             },
             'click .remove': function(e, value, row, index) {
                 console.log(row);
