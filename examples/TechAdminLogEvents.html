@@ -130,30 +130,29 @@
                     <div class="collapse " id="mapsExamples">
                         <ul class="nav">
                             <li class="nav-item ">
-                                <a class="nav-link" href="TechAdminAdminApplication.html">
+                                <a class="nav-link" href="./pages/Student_user.html">
                                     <span class="sidebar-mini">A</span>
                                     <span class="sidebar-normal">Application</span>
                                 </a>
                             </li>
                             <li class="nav-item ">
-                                <a class="nav-link" href="TechAdminAdminApplicant.html">
+                                <a class="nav-link" href="TechAdminDashboardApplicant.html">
                                     <span class="sidebar-mini">A</span>
                                     <span class="sidebar-normal">Applicant</span>
                                 </a>
                             </li>
                             <li class="nav-item ">
-                                <a class="nav-link" href="TechAdminAdminRemove.html">
+                                <a class="nav-link" href="./pages/Student_user.html">
                                     <span class="sidebar-mini">R</span>
                                     <span class="sidebar-normal">Remove</span>
                                 </a>
                             </li>
                             <li class="nav-item ">
-                                <a class="nav-link" href="TechAdminAdminDocuments.html">
+                                <a class="nav-link" href="./pages/Student_user.html">
                                     <span class="sidebar-mini">D</span>
                                     <span class="sidebar-normal">Documents</span>
                                 </a>
                             </li>
-
                         </ul>
                     </div>
                 </li>
@@ -266,7 +265,97 @@
         </nav>
         <!-- End Navbar -->
         <div class="content">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card card-plain table-plain-bg">
+                            <div class="card-header ">
+                                <h4 class="card-title">Log Events</h4>
+                            </div>
+                            <div class="card-body table-full-width table-responsive">
+                                <table class="table table-hover">
+                                    <thead>
+                                    <th>ID</th>
+                                    <th>Name</th>
+                                    <th>Type</th>
+                                    <th>Message</th>
+                                    <th>Date</th>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Dakota Rice</td>
+                                        <td>Type A</td>
+                                        <td>Wrong</td>
+                                        <td>21st</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Minerva Hooper</td>
+                                        <td>Type B</td>
+                                        <td>Right</td>
+                                        <td>22nd</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Sage Rodriguez</td>
+                                        <td>Type C</td>
+                                        <td>Right</td>
+                                        <td>23rd</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>Philip Chaney</td>
+                                        <td>Type D</td>
+                                        <td>Wrong</td>
+                                        <td>24th</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>Doris Greene</td>
+                                        <td>Type E</td>
+                                        <td>Right</td>
+                                        <td>25th</td>
+                                    </tr>
+                                    <tr>
+                                        <td>6</td>
+                                        <td>Mason Porter</td>
+                                        <td>Type F</td>
+                                        <td>Wrong</td>
+                                        <td>26th</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                <div class="card ">
+                    <div class="card-header ">
+                        <h4 class="card-title">Log Event Chart</h4>
+                        <p class="card-category">Event Status</p>
+                    </div>
+                    <div class="card-body ">
+                        <div id=chartPreferences class="ct-chart ct-perfect-fourth"></div>
+                    </div>
+                    <div class="card-footer ">
+                        <div class="legend">
+                            <i class="fa fa-circle text-info"></i> Waiting
+                            <i class="fa fa-circle text-danger"></i> Accepted
+                            <i class="fa fa-circle text-warning"></i> Denied
+                        </div>
+                        <hr>
+                        <div class="stats">
+                            <i class="fa fa-clock-o"></i> View status
+                        </div>
+                    </div>
+                </div>
+              </div>
+
+
+           </div>
         </div>
+      </div>
         <footer class="footer">
             <div class="container">
                 <nav>
@@ -347,14 +436,8 @@
 <!-- Light Dashboard DEMO methods, don't include it in your project! -->
 <script src="../assets/js/demo.js"></script>
 <script type="text/javascript">
-    $(document).ready(function() {
-        // Javascript method's body can be found in assets/js/demos.js
-        demo.initDashboardPageCharts();
-
-        demo.showNotification();
-
-        demo.initVectorMap();
-
+      $().ready(function() {
+        demo.initCharts();
     });
 </script>
 
