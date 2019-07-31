@@ -36,6 +36,11 @@
 }
 
 .card #chartPreferences {
+     width: 60%;
+     margin: 0 auto;
+}
+
+.card #chartPreferencesResults {
     width: 60%;
     margin: 0 auto;
 }
