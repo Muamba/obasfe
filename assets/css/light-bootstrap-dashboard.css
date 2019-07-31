@@ -17,14 +17,17 @@
 /*      light colors         */
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
+
+
 body {
     font-family: 'Roboto', sans-serif
+    
 }
 
-	
+
 .main-section {
 
-	
+
     padding: 0;
     margin-top: -150px;
 margin-right: -100px;
@@ -44,7 +47,7 @@ padding-right: 20px;
 	width: 130px;
 }
 h3{
-    
+
     color: white;
     padding: 0 0 -10px 0;
 }
@@ -70,7 +73,8 @@ h3{
 	font-size: 22px;
 	left: 28px;
 	padding-top: 4px;
-	color: #555e60;
+	color: #daf1ff;
+    visibility: hidden;
 }
 .form-group:last-of-type::before {
 	content: "\f023";
@@ -395,8 +399,8 @@ body,
 .wrapper {
     min-height: 100vh;
     position: relative;}
-     
-   
+
+
 
 
 a {
@@ -4559,7 +4563,7 @@ fieldset[disabled] .form-control {
 .footer {
     background-color: #ffea00;
     width: 100%;
-   
+
 }
 
 .footer .footer-menu {

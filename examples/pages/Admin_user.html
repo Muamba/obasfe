@@ -16,11 +16,12 @@
     <link href="../../assets/css/light-bootstrap-dashboard.css?v=2.0.1" rel="stylesheet" />
     <!-- CSS Just for demo purpose, don't include it in your project -->
     <link href="../../assets/css/demo.css" rel="stylesheet" />
+
 </head>
 
 <body>
     <div class="wrapper">
-        <div class="sidebar" data-color="orange" data-image="../../assets/img/sidebar-5.jpg">
+        <div class="sidebar" data-color="orange" data-image="../assets/img/sidebar-5.jpg">
             <!--
         Tip 1: You can change the color of the sidebar using: data-color="purple | blue | green | orange | red"
 
@@ -37,12 +38,12 @@
                 </div>
                 <div class="user">
                     <div class="photo">
-                        <img src="../../assets/img/default-avatar.png" />
+                        <img src="default-avatar.png" />
                     </div>
                     <div class="info ">
-                        <a data-toggle="collapse" href="#collapseExample" class="collapsed">
+                        <a class="nav-item ">
                             <span>Tania Andrew
-                                <b class="caret"></b>
+                                <!-- <b class="caret"></b>-->
                             </span>
                         </a>
                         <div class="collapse" id="collapseExample">
@@ -69,228 +70,77 @@
                         </div>
                     </div>
                 </div>
-                <ul class="nav">
-                    <li class="nav-item ">
-                        <a class="nav-link" href="../dashboard.html">
-                            <i class="nc-icon nc-chart-pie-35"></i>
-                            <p>Dashboard</p>
-                        </a>
-                    </li>
+
+
+
+                <ul class="nav" style="position: center">
+                    <!-- <li class="nav-item ">
+                         <a class="nav-link" href="./dashboard.html">
+                             <i class="nc-icon nc-chart-pie-35"></i>
+                             <p>Dashboard</p>
+                         </a>
+                     </li>-->
                     <li class="nav-item">
                         <a class="nav-link" data-toggle="collapse" href="#componentsExamples">
-                            <i class="nc-icon nc-app"></i>
+                            <i class="nc-icon nc-single-02"></i>
                             <p>
-                                Components
+                                Profil Account
                                 <b class="caret"></b>
                             </p>
                         </a>
                         <div class="collapse " id="componentsExamples">
                             <ul class="nav">
                                 <li class="nav-item ">
-                                    <a class="nav-link" href="../components/buttons.html">
-                                        <span class="sidebar-mini">B</span>
-                                        <span class="sidebar-normal">Buttons</span>
+                                    <a class="nav-link" href="./Admin_user.html">
+                                        <span class="sidebar-mini">V</span>
+                                        <span class="sidebar-normal">View Profil</span>
                                     </a>
                                 </li>
                                 <li class="nav-item ">
-                                    <a class="nav-link" href="../components/grid.html">
-                                        <span class="sidebar-mini">GS</span>
-                                        <span class="sidebar-normal">Grid System</span>
+                                    <a class="nav-link" href="./Admin_user.html">
+                                        <span class="sidebar-mini">E</span>
+                                        <span class="sidebar-normal">Edit Profil</span>
                                     </a>
                                 </li>
-                                <li class="nav-item ">
-                                    <a class="nav-link" href="../components/panels.html">
-                                        <span class="sidebar-mini">P</span>
-                                        <span class="sidebar-normal">Panels</span>
-                                    </a>
-                                </li>
-                                <li class="nav-item ">
-                                    <a class="nav-link" href="../components/sweet-alert.html">
-                                        <span class="sidebar-mini">SA</span>
-                                        <span class="sidebar-normal">Sweet Alert</span>
-                                    </a>
-                                </li>
-                                <li class="nav-item ">
-                                    <a class="nav-link" href="../components/notifications.html">
-                                        <span class="sidebar-mini">N</span>
-                                        <span class="sidebar-normal">Notifications</span>
-                                    </a>
-                                </li>
-                                <li class="nav-item ">
-                                    <a class="nav-link" href="../components/icons.html">
-                                        <span class="sidebar-mini">I</span>
-                                        <span class="sidebar-normal">Icons</span>
-                                    </a>
-                                </li>
-                                <li class="nav-item ">
-                                    <a class="nav-link" href="../components/typography.html">
-                                        <span class="sidebar-mini">T</span>
-                                        <span class="sidebar-normal">Typography</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-toggle="collapse" href="#formsExamples">
-                            <i class="nc-icon nc-notes"></i>
-                            <p>
-                                Forms
-                                <b class="caret"></b>
-                            </p>
-                        </a>
-                        <div class="collapse " id="formsExamples">
-                            <ul class="nav">
-                                <li class="nav-item ">
-                                    <a class="nav-link" href="../forms/regular.html">
-                                        <span class="sidebar-mini">Rf</span>
-                                        <span class="sidebar-normal">Regular Forms</span>
-                                    </a>
-                                </li>
-                                <li class="nav-item ">
-                                    <a class="nav-link" href="../forms/extended.html">
-                                        <span class="sidebar-mini">Ef</span>
-                                        <span class="sidebar-normal">Extended Forms</span>
-                                    </a>
-                                </li>
-                                <li class="nav-item ">
-                                    <a class="nav-link" href="../forms/validation.html">
-                                        <span class="sidebar-mini">Vf</span>
-                                        <span class="sidebar-normal">Validation Forms</span>
-                                    </a>
-                                </li>
-                                <li class="nav-item ">
-                                    <a class="nav-link" href="../forms/wizard.html">
-                                        <span class="sidebar-mini">W</span>
-                                        <span class="sidebar-normal">Wizard</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-toggle="collapse" href="#tablesExamples">
-                            <i class="nc-icon nc-paper-2"></i>
-                            <p>
-                                Tables
-                                <b class="caret"></b>
-                            </p>
-                        </a>
-                        <div class="collapse show" id="tablesExamples">
-                            <ul class="nav">
-                                <li class="nav-item ">
-                                    <a class="nav-link" href="../tables/regular.html">
-                                        <span class="sidebar-mini">RT</span>
-                                        <span class="sidebar-normal">Regular Tables</span>
-                                    </a>
-                                </li>
-                                <li class="nav-item ">
-                                    <a class="nav-link" href="../tables/extended.html">
-                                        <span class="sidebar-mini">ET</span>
-                                        <span class="sidebar-normal">Extended Tables</span>
-                                    </a>
-                                </li>
-                                <li class="nav-item active">
-                                    <a class="nav-link" href="../tables/bootstrap-table.html">
-                                        <span class="sidebar-mini">BT</span>
-                                        <span class="sidebar-normal">Bootstrap Table</span>
-                                    </a>
-                                </li>
-                                <li class="nav-item ">
-                                    <a class="nav-link" href="../tables/datatables.net.html">
-                                        <span class="sidebar-mini">DT</span>
-                                        <span class="sidebar-normal">DataTables.net</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-toggle="collapse" href="#mapsExamples">
-                            <i class="nc-icon nc-pin-3"></i>
-                            <p>
-                                Maps
-                                <b class="caret"></b>
-                            </p>
-                        </a>
-                        <div class="collapse " id="mapsExamples">
-                            <ul class="nav">
-                                <li class="nav-item ">
-                                    <a class="nav-link" href="../maps/google.html">
-                                        <span class="sidebar-mini">GM</span>
-                                        <span class="sidebar-normal">Google Maps</span>
-                                    </a>
-                                </li>
-                                <li class="nav-item ">
-                                    <a class="nav-link" href="../maps/vector.html">
-                                        <span class="sidebar-mini">VM</span>
-                                        <span class="sidebar-normal">Vector maps</span>
-                                    </a>
-                                </li>
-                                <li class="nav-item ">
-                                    <a class="nav-link" href="../maps/fullscreen.html">
-                                        <span class="sidebar-mini">FSM</span>
-                                        <span class="sidebar-normal">Full Screen Map</span>
-                                    </a>
-                                </li>
+
                             </ul>
                         </div>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link" href="../charts.html">
-                            <i class="nc-icon nc-chart-bar-32"></i>
-                            <p>Charts</p>
+                        <a class="nav-link" href="../Admin_dashboard.html">
+                            <i class="nc-icon nc-chart-pie-35"></i>
+                            <p>Dashboard</p>
+                        </a>
+                    </li>
+
+
+                    <li class="nav-item ">
+                            <a class="nav-link" href="../admin_application.html">
+                                <i class="nc-icon nc-attach-87"></i>
+                                <p>Application</p>
+                            </a>
+                        </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="../admin_applicant.html">
+                            <i class="nc-icon nc-single-02"></i>
+                            <!--  <i class="nc-icon nc-single-copy-04"></i>-->
+                            <p>Applicant</p>
                         </a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link" href="../calendar.html">
+                            <a class="nav-link" href="../admin_remove.html">
+                                <i class="nc-icon nc-simple-remove"></i>
+                                <p> Remove</p>
+                            </a>
+                        </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="../admin_documents.html">
                             <i class="nc-icon nc-single-copy-04"></i>
-                            <p>Calendar</p>
+                            <p>         Documents</p>
                         </a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-toggle="collapse" href="#pagesExamples">
-                            <i class="nc-icon nc-puzzle-10"></i>
-                            <p>
-                                Pages
-                                <b class="caret"></b>
-                            </p>
-                        </a>
-                        <div class="collapse " id="pagesExamples">
-                            <ul class="nav">
-                                <li class="nav-item ">
-                                    <a class="nav-link" href="../pages/login.html">
-                                        <span class="sidebar-mini">LP</span>
-                                        <span class="sidebar-normal">Login Page</span>
-                                    </a>
-                                </li>
-                                <li class="nav-item ">
-                                    <a class="nav-link" href="../pages/register.html">
-                                        <span class="sidebar-mini">RP</span>
-                                        <span class="sidebar-normal">Register Page</span>
-                                    </a>
-                                </li>
-                                <li class="nav-item ">
-                                    <a class="nav-link" href="../pages/lock.html">
-                                        <span class="sidebar-mini">LSP</span>
-                                        <span class="sidebar-normal">Lock Screen Page</span>
-                                    </a>
-                                </li>
-                                <li class="nav-item  ">
-                                    <a class="nav-link" href="../pages/user.html">
-                                        <span class="sidebar-mini">UP</span>
-                                        <span class="sidebar-normal">User Page</span>
-                                    </a>
-                                </li>
-                                <li class="nav-item  ">
-                                    <a class="nav-link" href="#lbd">
-                                        <span class="sidebar-mini">MCS</span>
-                                        <span class="sidebar-normal">More coming soon...</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
+
+                    
                 </ul>
             </div>
         </div>
@@ -305,7 +155,7 @@
                                 <i class="fa fa-navicon visible-on-sidebar-mini"></i>
                             </button>
                         </div>
-                        <a class="navbar-brand" href="#pablo"> Bootstrap Table </a>
+                        <a class="navbar-brand" href="#pablo"> User Page </a>
                     </div>
                     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-bar burger-lines"></span>
@@ -379,54 +229,132 @@
             <!-- End Navbar -->
             <div class="content">
                 <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="card bootstrap-table">
-                                <div class="card-body table-full-width">
-                                    <div class="toolbar">
-                                        <!--        Here you can write extra buttons/actions for the toolbar              -->
+                    <div class="section-image" data-image="../../assets/img/bg5.jpg" ;>
+                        <!--   you can change the color of the filter page using: data-color="blue | purple | green | orange | red | rose " -->
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-8 col-sm-6"style=" background-color: #006837;">
+                                    <form class="form" method="" action="" style=" background-color: #006837;">
+                                        <div class="card " style=" background-color: #006837; border: #006837;">
+                                            <div style=" background-color: #006837;" class="card-header ">
+                                                <div style=" background-color: #006837;"class="card-header">
+                                                    <h4 style="color: #ffffff" class="card-title">Edit Profile</h4>
+                                                </div>
+                                            </div>
+                                            <div class="card-body ">
+                                                <div class="row">
+                                                    <div class="col-md-5 pr-1">
+                                                        <div class="form-group">
+                                                            <label>Company (disabled)</label>
+                                                            <input type="text" class="form-control" disabled="" placeholder="Company" value="Creative Code Inc.">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-3 px-1">
+                                                        <div class="form-group">
+                                                            <label>Username</label>
+                                                            <input type="text" class="form-control" placeholder="Username" value="michael23">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4 pl-1">
+                                                        <div  class="form-group" >
+                                                            <label for="exampleInputEmail1">Email address</label>
+                                                            <input type="email" class="form-control" placeholder="Email" >
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-6 pr-1">
+                                                        <div class="form-group">
+                                                            <label>First Name</label>
+                                                            <input type="text" class="form-control" placeholder="Company" value="Mike"style="border-color: #1a1a1a;border: 2px ">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6 pl-1">
+                                                        <div class="form-group">
+                                                            <label>Last Name</label>
+                                                            <input type="text" class="form-control" placeholder="Last Name" value="Andrew">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <div class="form-group">
+                                                            <label>Address</label>
+                                                            <input type="text" class="form-control" placeholder="Home Address" value="Bld Mihail Kogalniceanu, nr. 8 Bl 1, Sc 1, Ap 09">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-4 pr-1">
+                                                        <div class="form-group">
+                                                            <label>City</label>
+                                                            <input type="text" class="form-control" placeholder="City" value="Mike">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4 px-1">
+                                                        <div class="form-group">
+                                                            <label>Country</label>
+                                                            <input type="text" class="form-control" placeholder="Country" value="Andrew">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4 pl-1">
+                                                        <div class="form-group">
+                                                            <label>Postal Code</label>
+                                                            <input type="number" class="form-control" placeholder="ZIP Code">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <div class="form-group">
+                                                            <label>About Me</label>
+                                                            <textarea rows="4" cols="80" class="form-control" placeholder="Here can be your description" value="Mike"></textarea>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <button type="submit" class="btn btn-info btn-fill pull-right">Update Profile</button>
+                                                <div class="clearfix"></div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card card-user">
+                                        <div class="card-header no-padding">
+                                            <div class="card-image">
+                                                <img src="../../assets/img/full-screen-image-3.jpg" alt="...">
+                                            </div>
+                                        </div>
+                                        <div class="card-body ">
+                                            <div class="author">
+                                                <a href="#">
+                                                    <img class="avatar border-gray" src="../../assets/img/default-avatar.png" alt="...">
+                                                    <h5 class="card-title">Tania Keatley</h5>
+                                                </a>
+                                                <p class="card-description">
+                                                    michael24
+                                                </p>
+                                            </div>
+                                            <p class="card-description text-center">
+                                                Hey there! As you can see,
+                                                <br> it is already looking great.
+                                            </p>
+                                        </div>
+                                        <div class="card-footer ">
+                                            <hr>
+                                            <div class="button-container text-center">
+                                                <button href="#" class="btn btn-simple btn-link btn-icon">
+                                                    <i class="fa fa-facebook-square"></i>
+                                                </button>
+                                                <button href="#" class="btn btn-simple btn-link btn-icon">
+                                                    <i class="fa fa-twitter"></i>
+                                                </button>
+                                                <button href="#" class="btn btn-simple btn-link btn-icon">
+                                                    <i class="fa fa-google-plus-square"></i>
+                                                </button>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <table id="bootstrap-table" class="table">
-                                        <thead>
-                                            <th data-field="state" data-checkbox="true"></th>
-                                            <th data-field="id" class="text-center">ID</th>
-                                            <th data-field="name" data-sortable="true">Name</th>
-                                            <th data-field="salary" data-sortable="true">Salary</th>
-                                            <th data-field="country" data-sortable="true">Country</th>
-                                            <th data-field="city">City</th>
-                                            <th data-field="actions" class="td-actions text-right" data-events="operateEvents" data-formatter="operateFormatter">Actions</th>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td></td>
-                                                <td>1</td>
-                                                <td>Dakota Rice</td>
-                                                <td>$36,738</td>
-                                                <td>Niger</td>
-                                                <td>Oud-Turnhout</td>
-                                                <td></td>
-                                            </tr>
-                                            <tr>
-                                                <td></td>
-                                                <td>2</td>
-                                                <td>Minerva Hooper</td>
-                                                <td>$23,789</td>
-                                                <td>Curaçao</td>
-                                                <td>Sinaai-Waas</td>
-                                                <td></td>
-                                            </tr>
-                                            <tr>
-                                                <td></td>
-                                                <td>3</td>
-                                                <td>Sage Rodriguez</td>
-                                                <td>$56,142</td>
-                                                <td>Netherlands</td>
-                                                <td>Baileux</td>
-                                                <td></td>
-                                            </tr>
-                                           
-                                        </tbody>
-                                    </table>
                                 </div>
                             </div>
                         </div>
@@ -620,83 +548,5 @@
 <script src="../../assets/js/light-bootstrap-dashboard.js?v=2.0.1" type="text/javascript"></script>
 <!-- Light Dashboard DEMO methods, don't include it in your project! -->
 <script src="../../assets/js/demo.js"></script>
-<script type="text/javascript">
-    var $table = $('#bootstrap-table');
-
-    function operateFormatter(value, row, index) {
-        return [
-            '<a rel="tooltip" title="View" class="btn btn-link btn-info table-action view" href="javascript:void(0)">',
-            '<i class="fa fa-image"></i>',
-            '</a>',
-            '<a rel="tooltip" title="Edit" class="btn btn-link btn-warning table-action edit" href="javascript:void(0)">',
-            '<i class="fa fa-edit"></i>',
-            '</a>',
-            '<a rel="tooltip" title="Remove" class="btn btn-link btn-danger table-action remove" href="javascript:void(0)">',
-            '<i class="fa fa-remove"></i>',
-            '</a>'
-        ].join('');
-    }
-
-    $().ready(function() {
-        window.operateEvents = {
-            'click .view': function(e, value, row, index) {
-                info = JSON.stringify(row);
-
-                swal('You click view icon, row: ', info);
-                console.log(info);
-            },
-            'click .edit': function(e, value, row, index) {
-                info = JSON.stringify(row);
-
-                swal('You click edit icon, row: ', info);
-                console.log(info);
-            },
-            'click .remove': function(e, value, row, index) {
-                console.log(row);
-                $table.bootstrapTable('remove', {
-                    field: 'id',
-                    values: [row.id]
-                });
-            }
-        };
-
-        $table.bootstrapTable({
-            toolbar: ".toolbar",
-            clickToSelect: true,
-            showRefresh: true,
-            search: true,
-            showToggle: true,
-            showColumns: true,
-            pagination: true,
-            searchAlign: 'left',
-            pageSize: 8,
-            clickToSelect: false,
-            pageList: [8, 10, 25, 50, 100],
-
-            formatShowingRows: function(pageFrom, pageTo, totalRows) {
-                //do nothing here, we don't want to show the text "showing x of y from..."
-            },
-            formatRecordsPerPage: function(pageNumber) {
-                return pageNumber + " rows visible";
-            },
-            icons: {
-                refresh: 'fa fa-refresh',
-                toggle: 'fa fa-th-list',
-                columns: 'fa fa-columns',
-                detailOpen: 'fa fa-plus-circle',
-                detailClose: 'fa fa-minus-circle'
-            }
-        });
-
-        //activate the tooltips after the data table is initialized
-        $('[rel="tooltip"]').tooltip();
-
-        $(window).resize(function() {
-            $table.bootstrapTable('resetView');
-        });
-
-
-    });
-</script>
 
 </html>
