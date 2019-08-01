@@ -286,66 +286,130 @@
         <!-- End Navbar -->
         <div class="content">
             <div class="container-fluid">
+                <div class="col-md-12">
+                    <div class="card card-plain table-plain-bg">
+                        <div class="card-header ">
+                            <h4 class="card-title">Log Events</h4>
+                        </div>
+                        <div class="card-body table-full-width table-responsive">
+                            <table class="table table-hover">
+                                <thead>
+                                <th>ID</th>
+                                <th>Name</th>
+                                <th>Type</th>
+                                <th>Message</th>
+                                <th>Date</th>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Dakota Rice</td>
+                                    <td>Type A</td>
+                                    <td>Wrong</td>
+                                    <td>21st</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Minerva Hooper</td>
+                                    <td>Type B</td>
+                                    <td>Right</td>
+                                    <td>22nd</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Sage Rodriguez</td>
+                                    <td>Type C</td>
+                                    <td>Right</td>
+                                    <td>23rd</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>Philip Chaney</td>
+                                    <td>Type A</td>
+                                    <td>Wrong</td>
+                                    <td>24th</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>Doris Greene</td>
+                                    <td>Type B</td>
+                                    <td>Right</td>
+                                    <td>25th</td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>Mason Porter</td>
+                                    <td>Type C</td>
+                                    <td>Wrong</td>
+                                    <td>26th</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Dakota Rice</td>
+                                    <td>Type A</td>
+                                    <td>Wrong</td>
+                                    <td>21st</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Minerva Hooper</td>
+                                    <td>Type B</td>
+                                    <td>Right</td>
+                                    <td>22nd</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Sage Rodriguez</td>
+                                    <td>Type C</td>
+                                    <td>Right</td>
+                                    <td>23rd</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>Philip Chaney</td>
+                                    <td>Type A</td>
+                                    <td>Wrong</td>
+                                    <td>24th</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>Doris Greene</td>
+                                    <td>Type B</td>
+                                    <td>Right</td>
+                                    <td>25th</td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>Mason Porter</td>
+                                    <td>Type C</td>
+                                    <td>Wrong</td>
+                                    <td>26th</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
                 <div class="row">
                     <div class="col-md-6">
-                        <div class="card card-plain table-plain-bg">
+                        <div class="card ">
                             <div class="card-header ">
-                                <h4 class="card-title">Log Events</h4>
+                                <h4 class="card-title">Log Event Statistics</h4>
+                                <p class="card-category">Statistics Status</p>
                             </div>
-                            <div class="card-body table-full-width table-responsive">
-                                <table class="table table-hover">
-                                    <thead>
-                                    <th>ID</th>
-                                    <th>Name</th>
-                                    <th>Type</th>
-                                    <th>Message</th>
-                                    <th>Date</th>
-                                    </thead>
-                                    <tbody>
-                                    <tr>
-                                        <td>1</td>
-                                        <td>Dakota Rice</td>
-                                        <td>Type A</td>
-                                        <td>Wrong</td>
-                                        <td>21st</td>
-                                    </tr>
-                                    <tr>
-                                        <td>2</td>
-                                        <td>Minerva Hooper</td>
-                                        <td>Type B</td>
-                                        <td>Right</td>
-                                        <td>22nd</td>
-                                    </tr>
-                                    <tr>
-                                        <td>3</td>
-                                        <td>Sage Rodriguez</td>
-                                        <td>Type C</td>
-                                        <td>Right</td>
-                                        <td>23rd</td>
-                                    </tr>
-                                    <tr>
-                                        <td>4</td>
-                                        <td>Philip Chaney</td>
-                                        <td>Type D</td>
-                                        <td>Wrong</td>
-                                        <td>24th</td>
-                                    </tr>
-                                    <tr>
-                                        <td>5</td>
-                                        <td>Doris Greene</td>
-                                        <td>Type E</td>
-                                        <td>Right</td>
-                                        <td>25th</td>
-                                    </tr>
-                                    <tr>
-                                        <td>6</td>
-                                        <td>Mason Porter</td>
-                                        <td>Type F</td>
-                                        <td>Wrong</td>
-                                        <td>26th</td>
-                                    </tr>
-                                    </tbody>
-                                </table>
+                            <div class="card-body ">
+                                <div id=chartBehaviour class="ct-chart"></div>
+                            </div>
+                            <div class="card-footer ">
+                                <div class="legend">
+                                    <i class="fa fa-circle text-info"></i> Type A
+                                    <i class="fa fa-circle text-danger"></i> Type B
+                                    <i class="fa fa-circle text-warning"></i> Type C
+                                </div>
+                                <hr>
+                                <div class="stats">
+                                    <i class="fa fa-history"></i> Updated 3 minutes ago
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -360,9 +424,9 @@
                     </div>
                     <div class="card-footer ">
                         <div class="legend">
-                            <i class="fa fa-circle text-info"></i> Waiting
-                            <i class="fa fa-circle text-danger"></i> Accepted
-                            <i class="fa fa-circle text-warning"></i> Denied
+                            <i class="fa fa-circle text-info"></i> Type A
+                            <i class="fa fa-circle text-danger"></i> Type  B
+                            <i class="fa fa-circle text-warning"></i> Type C
                         </div>
                         <hr>
                         <div class="stats">
@@ -371,9 +435,10 @@
                     </div>
                 </div>
               </div>
-
-
            </div>
+                <div class="row">
+
+                </div>
         </div>
       </div>
         <footer class="footer">
