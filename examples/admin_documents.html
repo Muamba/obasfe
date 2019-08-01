@@ -16,6 +16,7 @@
     <link href="../assets/css/bootstrap.min.css" rel="stylesheet" />
     <link href="../assets/css/light-bootstrap-dashboard.css?v=2.0.1" rel="stylesheet" />
     <!-- CSS Just for demo purpose, don't include it in your project -->
+    <link href="../assets/css/searchbar.css" rel="stylesheet" />
     <link href="../assets/css/demo.css" rel="stylesheet" />
 </head>
 
@@ -270,85 +271,189 @@
             <!-- End Navbar -->
             <div class="content">
                 <div class="container-fluid">
-
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="card bootstrap-table">
-                                <div class="card-body table-full-width">
-                                    <div class="toolbar">
-                                        <!--        Here you can write extra buttons/actions for the toolbar              -->
+                        <div class="row">
+                                <div class="col-md-12">
+                                    <div class="card bootstrap-table">
+                                        <div class="card-body table-full-width">
+                                            <div class="toolbar">
+                                                <!--        Here you can write extra buttons/actions for the toolbar              -->
+                                            </div>
+                                            <table id="bootstrap-table" class="table">
+                                                <thead>
+                                                    
+                                                    <th data-field="id" class="text-center">ID</th>
+                                                    <th data-field="name" data-sortable="true">Name</th>
+                                                    <th data-field="salary" data-sortable="true">Salary</th>
+                                                    <th data-field="country" data-sortable="true">Country</th>
+                                                    <th data-field="city">City</th>
+                                                   
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                       
+                                                        <td>1</td>
+                                                        <td>Dakota Rice</td>
+                                                        <td>$36,738</td>
+                                                        <td>Niger</td>
+                                                        <td>Oud-Turnhout</td>
+                                                        
+                                                    </tr>
+                                                    <tr>
+                                                        
+                                                        <td>2</td>
+                                                        <td>Minerva Hooper</td>
+                                                        <td>$23,789</td>
+                                                        <td>Curaçao</td>
+                                                        <td>Sinaai-Waas</td>
+                                                        
+                                                    </tr>
+                                                    <tr>
+                                                        
+                                                        <td>3</td>
+                                                        <td>Sage Rodriguez</td>
+                                                        <td>$56,142</td>
+                                                        <td>Netherlands</td>
+                                                        <td>Baileux</td>
+                                                        
+                                                    </tr>
+                                                   
+                                                </tbody>
+                                            </table>
+                                        </div>
                                     </div>
-                                    <table id="bootstrap-table" class="table">
-                                        <thead>
-                                            <th data-field="state" data-checkbox="true"></th>
-                                            <th data-field="id" class="text-center">ID</th>
-                                            <th data-field="name" data-sortable="true">Name</th>
-                                            <th data-field="actions" class="td-actions text-right"
-                                                data-events="operateEvents" data-formatter="operateFormatter">Actions
-                                            </th>
-                                            <th data-field="actions" class="td-actions text-right"
-                                                data-events="operateEvents1" data-formatter="operateFormatter">Actions1
-                                            </th>
-                                            <th data-field="actions" class="td-actions text-right"
-                                                data-events="operateEvents" data-formatter="operateFormatter">Actions
-                                            </th>
-                                            <th data-field="actions" class="td-actions text-right"
-                                                data-events="operateEvents" data-formatter="operateFormatter">Actions
-                                            </th>
-                                            <th data-field="actions" class="td-actions text-right"
-                                                data-events="operateEvents" data-formatter="operateFormatter">Actions
-                                            </th>
-                                            <th data-field="actions" class="td-actions text-right"
-                                                data-events="operateEvents" data-formatter="operateFormatter">Actions
-                                            </th>
-                                            <th data-field="actions" class="td-actions text-right"
-                                                data-events="operateEvents" data-formatter="operateFormatter">Actions
-                                            </th>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td></td>
-                                                <td>1</td>
-                                                <td>Dakota Rice</td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                            </tr>
-                                            <tr>
-                                                <td></td>
-                                                <td>2</td>
-                                                <td>espoir</td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                            </tr>
-                                            <tr>
-                                                <td></td>
-                                                <td>3</td>
-                                                <td>Sage Rodriguez</td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                            </tr>
-
-                                        </tbody>
-                                    </table>
                                 </div>
                             </div>
-                        </div>
-                    </div>
+                            <div class="row">
+                                
+                                    <div class="col-md-12">
+                                        
+                                        
+                                        <div class="card table-with-links">
+                                            
+                                            <div class="card-header ">
+                                                <h4 class="card-title">Documents Table</h4>
+                                                <p class="card-category">Search with Student Id</p>
+                                                <div class="search">
+                                                        <input type="text" class="searchTerm" placeholder="Ex: 216093850">
+                                                        <button type="submit" class="searchButton">
+                                                          <i class="fa fa-search"></i>
+                                                       </button>
+                                                     </div>
+                                                  </div>
+                                                <div class="wrap">
+                                                        
+                                            </div>
+                                            <div class="card-body table-full-width">
+                                                <table class="table">
+                                                        
+                                                    <thead>
+                                                        <tr>
+                                                            <th class="text-center">#</th>
+                                                            <th>Document ID</th>
+                                                            <th>Document Type</th>
+                                                            <th class="text-right">Date</th>
+                                                            <th class="text-right">Description</th>
+                                                            <th class="text-right">View Documents</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="text-center">1</td>
+                                                            <td>Andrew Mike</td>
+                                                            <td>Develop</td>
+                                                            <td class="text-right">&euro; 99,225</td>
+                                                            <td class="text-right">&euro; 99,225</td>
+                                                            <td class="td-actions text-right">
+                                                                <a href="#" rel="tooltip" title="View Profile" class="fa fa-image" onclick="demo.showSwal('basic')"></a>
+
+                                                                
+                                                                
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-center">2</td>
+                                                            <td>John Doe</td>
+                                                            <td>Design</td>
+                                                            <td class="text-right">&euro; 89,241</td>
+                                                            <td class="text-right">&euro; 99,225</td>
+                                                            <td class="td-actions text-right">
+                                                                    <a href="#" rel="tooltip" title="View Profile" class="fa fa-image" onclick="demo.showSwal('basic')"></a>
+                                                                
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-center">3</td>
+                                                            <td>Alex Mike</td>
+                                                            <td>Design</td>
+                                                            <td class="text-right">&euro; 92,144</td>
+                                                            <td class="text-right">&euro; 99,225</td>
+                                                            <td class="td-actions text-right">
+                                                                    <a href="#" rel="tooltip" title="View Profile" class="fa fa-image" onclick="demo.showSwal('basic')"></a>
+                                                               
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-center">4</td>
+                                                            <td>Mike Monday</td>
+                                                            <td>Marketing</td>
+                                                            <td class="text-right">&euro; 49,990</td>
+                                                            <td class="text-right">&euro; 99,225</td>
+                                                            <td class="td-actions text-right">
+                                                                    <a href="#" rel="tooltip" title="View Profile" class="fa fa-image" onclick="demo.showSwal('basic')"></a>
+                                                               
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-center">5</td>
+                                                            <td>Paul Dickens</td>
+                                                            <td>Communication</td>
+                                                            <td class="text-right">415645
+                                                                    
+                                                            </td>
+                                                            <td class="text-right">&euro; 99,225</td>
+                                                            
+                                                            <td class="td-actions text-right">
+                                                                    <a href="#" rel="tooltip" title="View Profile" class="fa fa-image" onclick="demo.showSwal('basic')"></a>
+                                                               
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                                <td class="text-center">6</td>
+                                                                <td>Paul Dickens</td>
+                                                                <td>Communication</td>
+                                                                <td class="text-right">415645
+                                                                        
+                                                                </td>
+                                                                <td class="text-right">&euro; 99,225</td>
+                                                                
+                                                                <td class="td-actions text-right">
+                                                                        <a href="#" rel="tooltip" title="View Profile" class="fa fa-image" onclick="demo.showSwal('basic')"></a>
+                                                                   
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                    <td class="text-center">7</td>
+                                                                    <td>Paul Dickens</td>
+                                                                    <td>Communication</td>
+                                                                    <td class="text-right">415645
+                                                                            
+                                                                    </td>
+                                                                    <td class="text-right">&euro; 99,225</td>
+                                                                    
+                                                                    <td class="td-actions text-right">
+                                                                            <a href="#" rel="tooltip" title="View Profile" class="fa fa-image" onclick="demo.showSwal('basic')"></a>
+                                                                       
+                                                                    </td>
+                                                                </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                    
+                                </div>
+                    
                 </div>
             </div>
 
@@ -437,9 +542,11 @@
 
     function operateFormatter(value, row, index) {
         return [
-            '<a rel="tooltip" title="View" class="btn btn-link btn-info table-action view" href="javascript:void(0)">',
+            '<a rel="tooltip" title="View" class="btn btn-link btn-info table-action view"  href="javascript:void(0)">',
+            
             '<i class="fa fa-image"></i>',
             '</a>',
+            
 
         ].join('');
     }
@@ -453,6 +560,28 @@
         demo.initVectorMap();
         window.operateEvents = {
             'click .view': function (e, value, row, index) {
+                info = JSON.stringify(row);
+
+                swal('You click view icon, row: ', info);
+                console.log(info);
+            },
+            'click .view1': function (e, value, row, index) {
+                info = JSON.stringify(row);
+
+                swal('You click view icon, row: ', info);
+                console.log(info);
+            },
+
+
+        };
+        window.operateEvents1 = {
+            'click .view': function (e, value, row, index) {
+                info = JSON.stringify(row);
+
+                swal('You click view icon, row: ', info);
+                console.log(info);
+            },
+            'click .view1': function (e, value, row, index) {
                 info = JSON.stringify(row);
 
                 swal('You click view icon, row: ', info);
