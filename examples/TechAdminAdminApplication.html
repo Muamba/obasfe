@@ -90,17 +90,13 @@
                     <div class="collapse " id="componentsExamples">
                         <ul class="nav">
                             <li class="nav-item ">
-
-                                <a class="nav-link" href="../examples/pages/TechAdmin_user_View.html">
-
+                                <a class="nav-link" href="">
                                     <span class="sidebar-mini">V</span>
                                     <span class="sidebar-normal">View Profile</span>
                                 </a>
                             </li>
                             <li class="nav-item ">
-
-                                <a class="nav-link" href="../examples/pages/TechAdmin_user_View.html">
-
+                                <a class="nav-link" href="">
                                     <span class="sidebar-mini">E</span>
                                     <span class="sidebar-normal">Edit Profile</span>
                                 </a>
@@ -110,9 +106,7 @@
                     </div>
                 </li>
                 <li class="nav-item ">
-
-                    <a class="nav-link" href="TechAdmin_dashboard.html">
-
+                    <a class="nav-link" href="TechAdminDashboard.html">
                         <i class="nc-icon nc-chart-pie-35"></i>
                         <p>Dashboard</p>
                     </a>
@@ -120,9 +114,7 @@
 
 
                 <li class="nav-item ">
-
                     <a class="nav-link" href="TechAdminLogEvents.html">
-
                         <i class="nc-icon nc-attach-87"></i>
                         <p>Log Events</p>
                     </a>
@@ -138,42 +130,35 @@
                     <div class="collapse " id="mapsExamples">
                         <ul class="nav">
                             <li class="nav-item ">
-
-                                <a class="nav-link" href="">
-
+                                <a class="nav-link" href="TechAdminAdminApplication.html">
                                     <span class="sidebar-mini">A</span>
                                     <span class="sidebar-normal">Application</span>
                                 </a>
                             </li>
                             <li class="nav-item ">
-
-                                <a class="nav-link" href="">
-
+                                <a class="nav-link" href="TechAdminAdminApplicant.html">
                                     <span class="sidebar-mini">A</span>
                                     <span class="sidebar-normal">Applicant</span>
                                 </a>
                             </li>
                             <li class="nav-item ">
-
-                                <a class="nav-link" href="">
-
+                                <a class="nav-link" href="TechAdminAdminRemove.html">
                                     <span class="sidebar-mini">R</span>
                                     <span class="sidebar-normal">Remove</span>
                                 </a>
                             </li>
                             <li class="nav-item ">
-
-                                <a class="nav-link" href="">
-
+                                <a class="nav-link" href="TechAdminAdminDocuments.html">
                                     <span class="sidebar-mini">D</span>
                                     <span class="sidebar-normal">Documents</span>
                                 </a>
                             </li>
+
                         </ul>
                     </div>
                 </li>
                 <li class="nav-item ">
-                    <a class="nav-link" href="./TechAdminSystem.html">
+                    <a class="nav-link" href="TechAdminSystem.html">
                         <i class="nc-icon nc-single-copy-04"></i>
                         <p>System</p>
                     </a>
@@ -181,9 +166,7 @@
 
                 <li class="nav-item ">
                     <div class="logo">
-
-                        <a class="nav-link" href="http://motsepefoundation.org/">
-
+                        <a class="nav-link" href="./calendar.html">
                             <!-- <i class="nc-icon nc-single-copy-04"></i>-->
 
                         </a>
@@ -191,9 +174,7 @@
                 </li>
 
                 <li class="nav-item ">
-
-                    <a class="nav-link" href="">
-
+                    <a class="nav-link" href="./calendar.html">
                         <!-- <i class="nc-icon nc-single-copy-04"></i>-->
                         <p style="position: center">Log out</p>
                     </a>
@@ -285,162 +266,241 @@
         </nav>
         <!-- End Navbar -->
         <div class="content">
-            <div class="container-fluid">
-                <div class="col-md-12">
-                    <div class="card card-plain table-plain-bg">
+             <div class="row">
+                 <div class="col-md-6">
+                     <div class="card strpied-tabled-with-hover">
+                         <div class="card-header ">
+                             <h4 class="card-title">Application Status</h4>
+                             <p class="card-category"></p>
+                         </div>
+                         <div class="card-body table-full-width table-responsive">
+                             <table class="table table-hover table-striped">
+                                 <thead>
+                                 <th>Application Status ID</th>
+                                 <th>Description</th>
+                                 <th>Date</th>
+                                 </thead>
+                                 <tbody>
+                                 <tr>
+                                     <td>1</td>
+                                     <td>Dakota Rice</td>
+                                     <td>$36,738</td>
+
+                                 </tr>
+                                 <tr>
+                                     <td>2</td>
+                                     <td>Minerva Hooper</td>
+                                     <td>$23,789</td>
+
+                                 </tr>
+                                 <tr>
+                                     <td>3</td>
+                                     <td>Sage Rodriguez</td>
+                                     <td>$56,142</td>
+
+                                 </tr>
+                                 <tr>
+                                     <td>4</td>
+                                     <td>Philip Chaney</td>
+                                     <td>$38,735</td>
+
+                                 </tr>
+                                 <tr>
+                                     <td>5</td>
+                                     <td>Doris Greene</td>
+                                     <td>$63,542</td>
+
+                                 </tr>
+                                 <tr>
+                                     <td>6</td>
+                                     <td>Mason Porter</td>
+                                     <td>$78,615</td>
+
+                                 </tr>
+                                 </tbody>
+                             </table>
+                         </div>
+                     </div>
+                 </div>
+
+                 <div class="col-md-6">
+                     <div class="card ">
+                         <div class="card-header ">
+                             <h4 class="card-title">Application Status Pie Chart</h4>
+                             <p class="card-category"></p>
+                         </div>
+                         <div class="card-body ">
+                             <div id=chartPreferences class="ct-chart ct-perfect-fourth"></div>
+                         </div>
+                         <div class="card-footer ">
+                             <div class="legend">
+                                 <i class="fa fa-circle text-info"></i> Open
+                                 <i class="fa fa-circle text-danger"></i> Bounce
+                                 <i class="fa fa-circle text-warning"></i> Unsubscribe
+                             </div>
+
+                         </div>
+                     </div>
+                 </div>
+        </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card strpied-tabled-with-hover">
                         <div class="card-header ">
-                            <h4 class="card-title">Log Events</h4>
+                            <h4 class="card-title">Application Result</h4>
+                            <p class="card-category"></p>
                         </div>
                         <div class="card-body table-full-width table-responsive">
-                            <table class="table table-hover">
+                            <table class="table table-hover table-striped">
                                 <thead>
-                                <th>ID</th>
-                                <th>Name</th>
-                                <th>Type</th>
-                                <th>Message</th>
+                                <th>Application Result ID</th>
+                                <th>Description</th>
                                 <th>Date</th>
                                 </thead>
                                 <tbody>
                                 <tr>
                                     <td>1</td>
                                     <td>Dakota Rice</td>
-                                    <td>Type A</td>
-                                    <td>Wrong</td>
-                                    <td>21st</td>
+                                    <td>$36,738</td>
+
                                 </tr>
                                 <tr>
                                     <td>2</td>
                                     <td>Minerva Hooper</td>
-                                    <td>Type B</td>
-                                    <td>Right</td>
-                                    <td>22nd</td>
+                                    <td>$23,789</td>
+
                                 </tr>
                                 <tr>
                                     <td>3</td>
                                     <td>Sage Rodriguez</td>
-                                    <td>Type C</td>
-                                    <td>Right</td>
-                                    <td>23rd</td>
+                                    <td>$56,142</td>
+
                                 </tr>
                                 <tr>
                                     <td>4</td>
                                     <td>Philip Chaney</td>
-                                    <td>Type A</td>
-                                    <td>Wrong</td>
-                                    <td>24th</td>
+                                    <td>$38,735</td>
+
                                 </tr>
                                 <tr>
                                     <td>5</td>
                                     <td>Doris Greene</td>
-                                    <td>Type B</td>
-                                    <td>Right</td>
-                                    <td>25th</td>
+                                    <td>$63,542</td>
+
                                 </tr>
                                 <tr>
                                     <td>6</td>
                                     <td>Mason Porter</td>
-                                    <td>Type C</td>
-                                    <td>Wrong</td>
-                                    <td>26th</td>
-                                </tr>
-                                <tr>
-                                    <td>1</td>
-                                    <td>Dakota Rice</td>
-                                    <td>Type A</td>
-                                    <td>Wrong</td>
-                                    <td>21st</td>
-                                </tr>
-                                <tr>
-                                    <td>2</td>
-                                    <td>Minerva Hooper</td>
-                                    <td>Type B</td>
-                                    <td>Right</td>
-                                    <td>22nd</td>
-                                </tr>
-                                <tr>
-                                    <td>3</td>
-                                    <td>Sage Rodriguez</td>
-                                    <td>Type C</td>
-                                    <td>Right</td>
-                                    <td>23rd</td>
-                                </tr>
-                                <tr>
-                                    <td>4</td>
-                                    <td>Philip Chaney</td>
-                                    <td>Type A</td>
-                                    <td>Wrong</td>
-                                    <td>24th</td>
-                                </tr>
-                                <tr>
-                                    <td>5</td>
-                                    <td>Doris Greene</td>
-                                    <td>Type B</td>
-                                    <td>Right</td>
-                                    <td>25th</td>
-                                </tr>
-                                <tr>
-                                    <td>6</td>
-                                    <td>Mason Porter</td>
-                                    <td>Type C</td>
-                                    <td>Wrong</td>
-                                    <td>26th</td>
+                                    <td>$78,615</td>
+
                                 </tr>
                                 </tbody>
                             </table>
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="card ">
-                            <div class="card-header ">
-                                <h4 class="card-title">Log Event Statistics</h4>
-                                <p class="card-category">Statistics Status</p>
-                            </div>
-                            <div class="card-body ">
-                                <div id=chartBehaviour class="ct-chart"></div>
-                            </div>
-                            <div class="card-footer ">
-                                <div class="legend">
-                                    <i class="fa fa-circle text-info"></i> Type A
-                                    <i class="fa fa-circle text-danger"></i> Type B
-                                    <i class="fa fa-circle text-warning"></i> Type C
-                                </div>
-                                <hr>
-                                <div class="stats">
-                                    <i class="fa fa-history"></i> Updated 3 minutes ago
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                <div class="card ">
-                    <div class="card-header ">
-                        <h4 class="card-title">Log Event Chart</h4>
-                        <p class="card-category">Event Status</p>
-                    </div>
-                    <div class="card-body ">
-                        <div id=chartPreferences class="ct-chart ct-perfect-fourth"></div>
-                    </div>
-                    <div class="card-footer ">
-                        <div class="legend">
-                            <i class="fa fa-circle text-info"></i> Type A
-                            <i class="fa fa-circle text-danger"></i> Type  B
-                            <i class="fa fa-circle text-warning"></i> Type C
-                        </div>
-                        <hr>
-                        <div class="stats">
-                            <i class="fa fa-clock-o"></i> View status
-                        </div>
-                    </div>
-                </div>
-              </div>
-           </div>
-                <div class="row">
 
+                <div class="col-md-6">
+                    <div class="card ">
+                        <div class="card-header ">
+                            <h4 class="card-title">Pie Chart</h4>
+                            <p class="card-category"></p>
+                        </div>
+                        <div class="card-body ">
+                            <div id=chartPreferencesResults class="ct-chart ct-perfect-fourth"></div>
+                        </div>
+                        <div class="card-footer ">
+                            <div class="legend">
+                                <i class="fa fa-circle text-info"></i> Open
+                                <i class="fa fa-circle text-danger"></i> Bounce
+                                <i class="fa fa-circle text-warning"></i> Unsubscribe
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card strpied-tabled-with-hover">
+                        <div class="card-header ">
+                            <h4 class="card-title">Application Result</h4>
+                            <p class="card-category"></p>
+                        </div>
+                        <div class="card-body table-full-width table-responsive">
+                            <table class="table table-hover table-striped">
+                                <thead>
+                                <th>Application Result ID</th>
+                                <th>Description</th>
+                                <th>Date</th>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Dakota Rice</td>
+                                    <td>$36,738</td>
+
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Minerva Hooper</td>
+                                    <td>$23,789</td>
+
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Sage Rodriguez</td>
+                                    <td>$56,142</td>
+
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>Philip Chaney</td>
+                                    <td>$38,735</td>
+
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>Doris Greene</td>
+                                    <td>$63,542</td>
+
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>Mason Porter</td>
+                                    <td>$78,615</td>
+
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card ">
+                        <div class="card-header ">
+                            <h4 class="card-title">Pie Chart</h4>
+                            <p class="card-category"></p>
+                        </div>
+                        <div class="card-body ">
+                            <div id=chartPreferencesType class="ct-chart ct-perfect-fourth"></div>
+                        </div>
+                        <div class="card-footer ">
+                            <div class="legend">
+                                <i class="fa fa-circle text-info"></i> Open
+                                <i class="fa fa-circle text-danger"></i> Bounce
+                                <i class="fa fa-circle text-warning"></i> Unsubscribe
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
-      </div>
         <footer class="footer">
             <div class="container">
                 <nav>
@@ -469,8 +529,8 @@
                     <p class="copyright text-center">
                         ©
                         <script>
-                                                        document.write(new Date().getFullYear())
-                                                    </script>
+                            document.write(new Date().getFullYear())
+                        </script>
                         <a href="http://www.creative-tim.com">Creative Tim</a>, made with love for a better web
                     </p>
                 </nav>
@@ -521,8 +581,76 @@
 <!-- Light Dashboard DEMO methods, don't include it in your project! -->
 <script src="../assets/js/demo.js"></script>
 <script type="text/javascript">
-      $().ready(function() {
-        demo.initCharts();
+    var $table = $('#bootstrap-table');
+
+    function operateFormatter(value, row, index) {
+        return [
+
+        ].join('');
+    }
+
+    $().ready(function() {
+        window.operateEvents = {
+            'click .view': function(e, value, row, index) {
+                info = JSON.stringify(row);
+
+                swal('You click view icon, row: ', info);
+                console.log(info);
+            },
+            'click .edit': function(e, value, row, index) {
+                info = JSON.stringify(row);
+
+                swal('You click edit icon, row: ', info);
+                console.log(info);
+            },
+            'click .remove': function(e, value, row, index) {
+                console.log(row);
+                $table.bootstrapTable('remove', {
+                    field: 'id',
+                    values: [row.id]
+                });
+            }
+        };
+
+        $table.bootstrapTable({
+            toolbar: ".toolbar",
+            clickToSelect: false,
+            showRefresh: false,
+            search: false,
+            showToggle: false,
+            showColumns: false,
+            pagination: true,
+            searchAlign: 'left',
+            pageSize: 8,
+            clickToSelect: false,
+            pageList: [8, 10, 25, 50, 100],
+
+            formatShowingRows: function(pageFrom, pageTo, totalRows) {
+                //do nothing here, we don't want to show the text "showing x of y from..."
+            },
+            formatRecordsPerPage: function(pageNumber) {
+                return pageNumber + " rows visible";
+            },
+            icons: {
+                refresh: 'fa fa-refresh',
+                toggle: 'fa fa-th-list',
+                columns: 'fa fa-columns',
+                detailOpen: 'fa fa-plus-circle',
+                detailClose: 'fa fa-minus-circle'
+            }
+        });
+
+        //activate the tooltips after the data table is initialized
+        $('[rel="tooltip"]').tooltip();
+
+        $(window).resize(function() {
+            $table.bootstrapTable('resetView');
+        });
+
+        $().ready(function() {
+            demo.initCharts();
+        });
+
     });
 </script>
 
