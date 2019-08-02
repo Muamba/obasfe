@@ -1350,7 +1350,24 @@ demo = {
                 swal("Deleted!", "Your imaginary file has been deleted.", "success");
             });
 
-        } else if (type == 'warning-message-and-cancel') {
+        }  else if (type == 'warning-message-and-confirmation2') {
+            swal({
+                title: "Are you sure?",
+                text: '',
+                type: "warning",
+                showCancelButton: true,
+                confirmButtonClass: "btn btn-info btn-fill",
+                confirmButtonText: "Yes, I am!",
+                cancelButtonClass: "btn btn-danger btn-fill",
+                closeOnConfirm: false,
+            }, function() {
+                swal("The System was shutdown");
+            });
+
+        }
+
+
+        else if (type == 'warning-message-and-cancel') {
             swal({
                 title: "Are you sure?",
                 text: "You will not be able to recover this imaginary file!",
@@ -1368,7 +1385,9 @@ demo = {
                 }
             });
 
-        } else if (type == 'custom-html') {
+        }
+
+        else if (type == 'custom-html') {
             swal({
                 title: 'HTML example',
                 html: 'You can use <b>bold text</b>, ' +
