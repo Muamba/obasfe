@@ -16,6 +16,7 @@
     <link href="../assets/css/light-bootstrap-dashboard.css?v=2.0.1" rel="stylesheet" />
     <!-- CSS Just for demo purpose, don't include it in your project -->
     <link href="../assets/css/demo.css" rel="stylesheet" />
+    <link href="../assets/css/form.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -27,12 +28,11 @@
     Tip 2: you can also add an image using data-image tag
 -->
         <div class="sidebar-wrapper">
-            <div class="logo">
-                <a href="http://www.creative-tim.com" class="simple-text logo-mini">
-                    Ct
-                </a>
+            <div class="logo" style="padding-left: 40px;padding-top: 0px;padding-bottom: 0px;background: #ffea00;height: 60px">
+
                 <a href="http://www.creative-tim.com" class="simple-text logo-normal">
-                    Creative Tim
+
+                    <img src="forms/Logo-04.png" alt="Logo" style="width: 176px; height: 55px;alignment: center">
                 </a>
             </div>
             <div class="user">
@@ -90,13 +90,17 @@
                     <div class="collapse " id="componentsExamples">
                         <ul class="nav">
                             <li class="nav-item ">
-                                <a class="nav-link" href="">
+
+                                <a class="nav-link" href="../examples/pages/TechAdmin_user_View.html">
+
                                     <span class="sidebar-mini">V</span>
                                     <span class="sidebar-normal">View Profile</span>
                                 </a>
                             </li>
                             <li class="nav-item ">
-                                <a class="nav-link" href="">
+
+                                <a class="nav-link" href="../examples/pages/TechAdmin_user.html">
+
                                     <span class="sidebar-mini">E</span>
                                     <span class="sidebar-normal">Edit Profile</span>
                                 </a>
@@ -106,7 +110,9 @@
                     </div>
                 </li>
                 <li class="nav-item ">
-                    <a class="nav-link" href="TechAdminDashboard.html">
+
+                    <a class="nav-link" href="TechAdmin_dashboard.html">
+
                         <i class="nc-icon nc-chart-pie-35"></i>
                         <p>Dashboard</p>
                     </a>
@@ -114,7 +120,7 @@
 
 
                 <li class="nav-item ">
-                    <a class="nav-link" href="TechAdminLogEvents.html">
+                    <a class="nav-link" href="./TechAdminLogEvents.html">
                         <i class="nc-icon nc-attach-87"></i>
                         <p>Log Events</p>
                     </a>
@@ -130,25 +136,33 @@
                     <div class="collapse " id="mapsExamples">
                         <ul class="nav">
                             <li class="nav-item ">
+
                                 <a class="nav-link" href="TechAdminAdminApplication.html">
+
                                     <span class="sidebar-mini">A</span>
                                     <span class="sidebar-normal">Application</span>
                                 </a>
                             </li>
                             <li class="nav-item ">
+
                                 <a class="nav-link" href="TechAdminAdminApplicant.html">
+
                                     <span class="sidebar-mini">A</span>
                                     <span class="sidebar-normal">Applicant</span>
                                 </a>
                             </li>
                             <li class="nav-item ">
+
                                 <a class="nav-link" href="TechAdminAdminRemove.html">
+
                                     <span class="sidebar-mini">R</span>
                                     <span class="sidebar-normal">Remove</span>
                                 </a>
                             </li>
                             <li class="nav-item ">
+
                                 <a class="nav-link" href="TechAdminAdminDocuments.html">
+
                                     <span class="sidebar-mini">D</span>
                                     <span class="sidebar-normal">Documents</span>
                                 </a>
@@ -166,15 +180,17 @@
 
                 <li class="nav-item ">
                     <div class="logo">
-                        <a class="nav-link" href="./calendar.html">
-                            <!-- <i class="nc-icon nc-single-copy-04"></i>-->
 
-                        </a>
+
+                        <!-- <i class="nc-icon nc-single-copy-04"></i>-->
+
                     </div>
                 </li>
 
                 <li class="nav-item ">
-                    <a class="nav-link" href="./calendar.html">
+
+                    <a class="nav-link" href="http://motsepefoundation.org/">
+
                         <!-- <i class="nc-icon nc-single-copy-04"></i>-->
                         <p style="position: center">Log out</p>
                     </a>
@@ -266,6 +282,168 @@
         </nav>
         <!-- End Navbar -->
         <div class="content">
+
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card strpied-tabled-with-hover">
+                            <div class="card-header ">
+                                <h4 class="card-title">Admin Dashboard</h4>
+                                <!-- <p class="card-category">Applicant</p> -->
+                            </div>
+                            <div class="card-body table-full-width table-responsive">
+                                <table class="table table-hover table-striped">
+                                    <p><h4 style="color: #000000">   <center>Applicants</center> </h4></p>
+                                    <thead>
+                                    <th>Select</th>
+                                    <th>Application Code</th>
+                                    <th>Email</th>
+                                    <th>Status</th>
+                                    <th>Phone</th>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>CTR050</td>
+                                        <td>joseph@gmail.com</td>
+                                        <td>In process</td>
+                                        <td>0625401763</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>CTR051</td>
+                                        <td>emile@gmail.com</td>
+                                        <td>In process</td>
+                                        <td>0816400725</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>CTR052</td>
+                                        <td>nombila@gmail.com</td>
+                                        <td>In process</td>
+                                        <td>07163453600</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>CTR053</td>
+                                        <td>cyfo@gmail.com</td>
+                                        <td>In process</td>
+                                        <td>08554982</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>CTR054</td>
+                                        <td>japhet@gmail.com</td>
+                                        <td>In process</td>
+                                        <td>Feldkirchen in Kärnten</td>
+                                    </tr>
+                                    <tr>
+                                        <td>6</td>
+                                        <td>CTR055</td>
+                                        <td>espoir@gmail.com</td>
+                                        <td>In process</td>
+                                        <td>0657007265</td>
+                                    </tr>
+                                    <tr>
+                                        <td>6</td>
+                                        <td>CTR055</td>
+                                        <td>aj@gmail.com</td>
+                                        <td>In process</td>
+                                        <td>0845201867</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card bootstrap-table">
+                            <div class="card-body table-full-width">
+                                <div class="toolbar">
+                                    <!--        Here you can write extra buttons/actions for the toolbar              -->
+                                </div>
+                                <table id="bootstrap-table" class="table">
+                                    <thead>
+                                    <th data-field="state" data-checkbox="true"></th>
+                                    <th data-field="id" class="text-center">ID</th>
+                                    <th data-field="name" data-sortable="true">Select all</th>
+                                    <th data-field="salary" data-sortable="true">Status</th>
+
+                                    <th data-field="actions"  data-events="operateEvents" data-formatter="operateFormatter"></th>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td></td>
+                                        <td>1</td>
+                                        <td>CTR050</td>
+                                        <td>In process</td>
+
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>2</td>
+                                        <td>CTR051</td>
+                                        <td>In process</td>
+
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>3</td>
+                                        <td>CTR052</td>
+                                        <td>In process</td>
+
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>4</td>
+                                        <td>CTR053</td>
+                                        <td>In process</td>
+
+                                        <td></td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <form id="contact" action="" method="post">
+                            <!-- <h3>Colorlib Contact Form</h3>
+                            <h4>Contact us for custom quote</h4> -->
+                            <!-- <fieldset>
+                              <input placeholder="Your name" type="text" tabindex="1" required autofocus>
+                            </fieldset>
+                            <fieldset>
+                              <input placeholder="Your Email Address" type="email" tabindex="2" required>
+                            </fieldset>
+                            <fieldset>
+                              <input placeholder="Your Phone Number (optional)" type="tel" tabindex="3" required>
+                            </fieldset>
+                            <fieldset>
+                              <input placeholder="Your Web Site (optional)" type="url" tabindex="4" required>
+                            </fieldset> -->
+                            <fieldset>
+                                <textarea placeholder="Type your message here...." tabindex="5" required></textarea>
+                            </fieldset>
+                            <fieldset>
+                                <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Send</button>
+                            </fieldset>
+                            <!-- <p class="copyright">Designed by <a href="https://cput.ac.za" target="_blank" title="Cput">Hub</a></p> -->
+                        </form>
+                    </div>
+                </div>
+
+
+            </div>
+
         </div>
         <footer class="footer">
             <div class="container">
