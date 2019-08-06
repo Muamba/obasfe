@@ -194,7 +194,7 @@
                                 <i class="fa fa-navicon visible-on-sidebar-mini"></i>
                             </button>
                         </div>
-                        <a class="navbar-brand" href="#pablo"> Dashboard PRO </a>
+                        <a class="navbar-brand" href="#pablo">  Admin Dashboard </a>
                     </div>
                     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
                         aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
@@ -274,18 +274,20 @@
                         <div class="row">
                                 <div class="col-md-12">
                                     <div class="card bootstrap-table">
+                                            
                                         <div class="card-body table-full-width">
+                                                <h4 class="card-title" style="margin-left: 14px">Documents Table</h4>
                                             <div class="toolbar">
                                                 <!--        Here you can write extra buttons/actions for the toolbar              -->
                                             </div>
                                             <table id="bootstrap-table" class="table">
                                                 <thead>
                                                     
-                                                    <th data-field="id" class="text-center">ID</th>
+                                                    <th data-field="#" class="text-center">#</th>
                                                     <th data-field="name" data-sortable="true">Name</th>
-                                                    <th data-field="salary" data-sortable="true">Salary</th>
-                                                    <th data-field="country" data-sortable="true">Country</th>
-                                                    <th data-field="city">City</th>
+                                                    <th data-field="Surname" data-sortable="true">Surname</th>
+                                                    <th data-field="Document ID" data-sortable="true">Document ID</th>
+                                                    <th data-field="Email">Email</th>
                                                    
                                                 </thead>
                                                 <tbody>
@@ -331,10 +333,10 @@
                                         <div class="card table-with-links">
                                             
                                             <div class="card-header ">
-                                                <h4 class="card-title">Documents Table</h4>
-                                                <p class="card-category">Search with Student Id</p>
+                                                <h4 class="card-title">View Documents </h4>
+                                                <p class="card-category">Search with Email</p>
                                                 <div class="search">
-                                                        <input type="text" class="searchTerm" placeholder="Ex: 216093850">
+                                                        <input type="text" class="searchTerm" placeholder="ex: japhetmbt@gmail.com">
                                                         <button type="submit" class="searchButton">
                                                           <i class="fa fa-search"></i>
                                                        </button>
@@ -353,7 +355,7 @@
                                                             <th>Document Type</th>
                                                             <th class="text-right">Date</th>
                                                             <th class="text-right">Description</th>
-                                                            <th class="text-right">View Documents</th>
+                                                            <th class="text-center">View Documents</th>
                                                         </tr>
                                                     </thead>
                                                     <tbody>
@@ -363,8 +365,8 @@
                                                             <td>Develop</td>
                                                             <td class="text-right">&euro; 99,225</td>
                                                             <td class="text-right">&euro; 99,225</td>
-                                                            <td class="td-actions text-right">
-                                                                <a href="#" rel="tooltip" title="View Profile" class="fa fa-image" onclick="demo.showSwal('basic')"></a>
+                                                            <td class="td-actions text-center">
+                                                                <a href="#" rel="tooltip" title="View Document" class="fa fa-image" onclick="demo.showSwal('basic')"></a>
 
                                                                 
                                                                 
@@ -376,8 +378,8 @@
                                                             <td>Design</td>
                                                             <td class="text-right">&euro; 89,241</td>
                                                             <td class="text-right">&euro; 99,225</td>
-                                                            <td class="td-actions text-right">
-                                                                    <a href="#" rel="tooltip" title="View Profile" class="fa fa-image" onclick="demo.showSwal('basic')"></a>
+                                                            <td class="td-actions text-center">
+                                                                    <a href="#" rel="tooltip" title="View Document" class="fa fa-image" onclick="demo.showSwal('basic')"></a>
                                                                 
                                                             </td>
                                                         </tr>
@@ -387,8 +389,8 @@
                                                             <td>Design</td>
                                                             <td class="text-right">&euro; 92,144</td>
                                                             <td class="text-right">&euro; 99,225</td>
-                                                            <td class="td-actions text-right">
-                                                                    <a href="#" rel="tooltip" title="View Profile" class="fa fa-image" onclick="demo.showSwal('basic')"></a>
+                                                            <td class="td-actions text-center">
+                                                                    <a href="#" rel="tooltip" title="View Document" class="fa fa-image" onclick="demo.showSwal('basic')"></a>
                                                                
                                                             </td>
                                                         </tr>
@@ -398,8 +400,8 @@
                                                             <td>Marketing</td>
                                                             <td class="text-right">&euro; 49,990</td>
                                                             <td class="text-right">&euro; 99,225</td>
-                                                            <td class="td-actions text-right">
-                                                                    <a href="#" rel="tooltip" title="View Profile" class="fa fa-image" onclick="demo.showSwal('basic')"></a>
+                                                            <td class="td-actions text-center">
+                                                                    <a href="#" rel="tooltip" title="View Document" class="fa fa-image" onclick="demo.showSwal('basic')"></a>
                                                                
                                                             </td>
                                                         </tr>
@@ -412,8 +414,8 @@
                                                             </td>
                                                             <td class="text-right">&euro; 99,225</td>
                                                             
-                                                            <td class="td-actions text-right">
-                                                                    <a href="#" rel="tooltip" title="View Profile" class="fa fa-image" onclick="demo.showSwal('basic')"></a>
+                                                            <td class="td-actions text-center">
+                                                                    <a href="#" rel="tooltip" title="View Document" class="fa fa-image" onclick="demo.showSwal('basic')"></a>
                                                                
                                                             </td>
                                                         </tr>
@@ -426,8 +428,8 @@
                                                                 </td>
                                                                 <td class="text-right">&euro; 99,225</td>
                                                                 
-                                                                <td class="td-actions text-right">
-                                                                        <a href="#" rel="tooltip" title="View Profile" class="fa fa-image" onclick="demo.showSwal('basic')"></a>
+                                                                <td class="td-actions text-center">
+                                                                        <a href="#" rel="tooltip" title="View Document" class="fa fa-image" onclick="demo.showSwal('basic')"></a>
                                                                    
                                                                 </td>
                                                             </tr>
@@ -440,8 +442,8 @@
                                                                     </td>
                                                                     <td class="text-right">&euro; 99,225</td>
                                                                     
-                                                                    <td class="td-actions text-right">
-                                                                            <a href="#" rel="tooltip" title="View Profile" class="fa fa-image" onclick="demo.showSwal('basic')"></a>
+                                                                    <td class="td-actions text-center">
+                                                                            <a href="#" rel="tooltip" title="View Document" class="fa fa-image" onclick="demo.showSwal('basic')"></a>
                                                                        
                                                                     </td>
                                                                 </tr>
