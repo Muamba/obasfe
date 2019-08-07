@@ -37,11 +37,11 @@
                 </div>
                 <div class="user">
                     <div class="photo">
-                        <img src="default-avatar.png" />
+                        <img src="../../assets/img/default-avatar.png" />
                     </div>
                     <div class="info ">
                         <a class="nav-item ">
-                            <span>Tania Andrew
+                            <span>User Name
                                 <!-- <b class="caret"></b>-->
                             </span>
                         </a>
@@ -65,6 +65,7 @@
                                         <span class="sidebar-normal">Settings</span>
                                     </a>
                                 </li>
+                                
                             </ul>
                         </div>
                     </div>
@@ -90,7 +91,7 @@
                         <div class="collapse " id="componentsExamples">
                             <ul class="nav">
                                 <li class="nav-item ">
-                                    <a class="nav-link" href="./Admin_user.html">
+                                    <a class="nav-link" href="./Admin_user_View.html">
                                         <span class="sidebar-mini">V</span>
                                         <span class="sidebar-normal">View Profil</span>
                                     </a>
@@ -138,7 +139,20 @@
                             <p>         Documents</p>
                         </a>
                     </li>
+                    <li class="nav-item ">
+                        <div class="logo">
+                        <a class="nav-link" href="./calendar.html">
+                            <!-- <i class="nc-icon nc-single-copy-04"></i>-->
 
+                        </a>
+                        </div>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="./calendar.html">
+                            <!-- <i class="nc-icon nc-single-copy-04"></i>-->
+                            <p style="position: center">Log out</p>
+                        </a>
+                    </li>
                     
                 </ul>
             </div>
@@ -232,91 +246,7 @@
                         <!--   you can change the color of the filter page using: data-color="blue | purple | green | orange | red | rose " -->
                         <div class="container">
                             <div class="row">
-                                <div class="col-md-8 col-sm-6"style=" background-color: #006837;">
-                                    <form class="form" method="" action="" style=" background-color: #006837;">
-                                        <div class="card " style=" background-color: #006837; border: #006837;">
-                                            <div style=" background-color: #006837;" class="card-header ">
-                                                <div style=" background-color: #006837;"class="card-header">
-                                                    <h4 style="color: #ffffff" class="card-title">Edit Profile</h4>
-                                                </div>
-                                            </div>
-                                            <div class="card-body ">
-                                                <div class="row">
-                                                    <div class="col-md-5 pr-1">
-                                                        <div class="form-group">
-                                                            <label>Company (disabled)</label>
-                                                            <input type="text" class="form-control" disabled="" placeholder="Company" value="Creative Code Inc.">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-3 px-1">
-                                                        <div class="form-group">
-                                                            <label>Username</label>
-                                                            <input type="text" class="form-control" placeholder="Username" value="michael23">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-4 pl-1">
-                                                        <div  class="form-group" >
-                                                            <label for="exampleInputEmail1">Email address</label>
-                                                            <input type="email" class="form-control" placeholder="Email" >
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-md-6 pr-1">
-                                                        <div class="form-group">
-                                                            <label>First Name</label>
-                                                            <input type="text" class="form-control" placeholder="Company" value="Mike"style="border-color: #1a1a1a;border: 2px ">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-6 pl-1">
-                                                        <div class="form-group">
-                                                            <label>Last Name</label>
-                                                            <input type="text" class="form-control" placeholder="Last Name" value="Andrew">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-md-12">
-                                                        <div class="form-group">
-                                                            <label>Address</label>
-                                                            <input type="text" class="form-control" placeholder="Home Address" value="Bld Mihail Kogalniceanu, nr. 8 Bl 1, Sc 1, Ap 09">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-md-4 pr-1">
-                                                        <div class="form-group">
-                                                            <label>City</label>
-                                                            <input type="text" class="form-control" placeholder="City" value="Mike">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-4 px-1">
-                                                        <div class="form-group">
-                                                            <label>Country</label>
-                                                            <input type="text" class="form-control" placeholder="Country" value="Andrew">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-4 pl-1">
-                                                        <div class="form-group">
-                                                            <label>Postal Code</label>
-                                                            <input type="number" class="form-control" placeholder="ZIP Code">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-md-12">
-                                                        <div class="form-group">
-                                                            <label>About Me</label>
-                                                            <textarea rows="4" cols="80" class="form-control" placeholder="Here can be your description" value="Mike"></textarea>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <button type="submit" class="btn btn-info btn-fill pull-right">Update Profile</button>
-                                                <div class="clearfix"></div>
-                                            </div>
-                                        </div>
-                                    </form>
-                                </div>
+
                                 <div class="col-md-4">
                                     <div class="card card-user">
                                         <div class="card-header no-padding">
@@ -328,16 +258,13 @@
                                             <div class="author">
                                                 <a href="#">
                                                     <img class="avatar border-gray" src="../../assets/img/default-avatar.png" alt="...">
-                                                    <h5 class="card-title">Tania Keatley</h5>
+                                                    <h5 class="card-title">USER NAME</h5>
                                                 </a>
                                                 <p class="card-description">
-                                                    michael24
+                                                    USER SURNAME
                                                 </p>
                                             </div>
-                                            <p class="card-description text-center">
-                                                Hey there! As you can see,
-                                                <br> it is already looking great.
-                                            </p>
+
                                         </div>
                                         <div class="card-footer ">
                                             <hr>
@@ -354,47 +281,145 @@
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="container">
+
+                                        <div class="row justify-content-center">
+                                            <ul class="nav nav-tabs">
+                                                <li class="nav-item">
+                                                    <a class="nav-link active" href="#tab1" data-toggle="tab" role="tab" aria-controls="tab1" aria-selected="true" style=" background-color: #006837; color:#fcf8e3;width: 300px; border: #fcf8e3 4px solid">Personal details</a>
+                                                </li>
+
+                                                <li class="nav-item">
+                                                    <a class="nav-link" href="#tab3" data-toggle="tab" role="tab" aria-controls="tab3" aria-selected="true"style=" background-color: #006837; color:#fcf8e3;width: 300px; border: #fcf8e3 4px solid">Residential details</a>
+                                                </li>
+
+                                            </ul>
+                                        </div>
+
+
+
+                                    </div>
                                 </div>
+
+                                <div class="col-md-8 col-sm-6">
+                                    <form class="form" method="" action="" style=" background-color: #006837;">
+                                        <div class="card " style=" background-color: #006837; border: #006837;">
+                                            <div style=" background-color: #006837;" class="card-header ">
+                                                <div style=" background-color: #006837;"class="card-header">
+                                                    <h4 style="color: #ffffff" class="card-title">Edit Profile</h4>
+                                                </div>
+                                            </div>
+                                            <div class="tab-content">
+                                                <div class="tab-pane fade show active" id="tab1" role="tabpanel">
+                                                   <!-- <p class="text-center">Please tell us more about yourself.</p>-->
+                                                    <h4 style="color: #ffffff" class="text-center">Personel details</h4>
+                                                    <div class="row justify-content-center">
+                                                        <div class="col-md-5 ">
+                                                            <div class="form-group">
+                                                                <label class="control-label">First Name</label>
+                                                                <input class="form-control" type="text" name="first_name" placeholder="ex: Mike" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-5">
+                                                            <div class="form-group">
+                                                                <label class="control-label">Last Name</label>
+                                                                <input class="form-control" type="text" name="last_name" required="true" placeholder="ex: Andrew" />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row justify-content-center">
+                                                        <div class="col-md-5">
+                                                            <label class="control-label">Birth day</label>
+                                                            <input type="date" class="form-control datepicker"  placeholder="Date Picker Here" />
+                                                        </div>
+
+                                                    <div class="col-md-5">
+                                                        <div class="form-group">
+                                                            <label class="control-label">Id Number</label>
+                                                            <input class="form-control" type="text" name="number"  placeholder="215954688" />
+                                                        </div>
+                                                    </div>
+                                                    </div>
+                                                    <div class="row justify-content-center">
+                                                        <div class="col-md-10">
+                                                            <div class="form-group">
+                                                                <label class="control-label">Email</label>
+                                                                <input class="form-control" type="text" name="email" email="true" placeholder="ex: hello@creative-tim.com" />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+
+
+                                                <div class="tab-pane fade" id="tab3" role="tabpanel">
+                                                    <h4 style="color: #ffffff" class="text-center">Residential details</h4>
+                                                    <div class="row justify-content-center">
+                                                        <div class="col-md-10">
+                                                            <div class="form-group">
+                                                                <label class="control-label">Physical Address</label>
+                                                                <input class="form-control" type="text" name="Physical address" placeholder="32 espoir str GoodWood" />
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="row justify-content-center">
+                                                        <div class="col-md-10">
+                                                            <div class="form-group">
+                                                                <label class="control-label">City</label>
+                                                                <input class="form-control" type="text" name="City" placeholder="Cape Town" />
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="row justify-content-center">
+                                                        <div class="col-md-10">
+                                                            <div class="form-group">
+                                                                <label class="control-label">Postal Code</label>
+                                                                <input class="form-control" type="number" name="Postal Code" placeholder="3205" />
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+
+                                                <div class="card-footer text-center">
+
+                                                    <button type="button" class="btn btn-info btn-wd btn-next pull-right">Update</button>
+
+                                                    <div class="clearfix"></div>
+                                                </div>
+
+
+                                        </div>
+                                        </div>
+                                    </form>
+                                </div>
+
+
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- <footer class="footer">
+            <footer class="footer">
                 <div class="container">
                     <nav>
-                        <ul class="footer-menu">
-                            <li>
-                                <a href="#">
-                                    Home
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    Company
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    Portfolio
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    Blog
-                                </a>
-                            </li>
-                        </ul>
+                        
                         <p class="copyright text-center">
                             ©
                             <script>
                                 document.write(new Date().getFullYear())
                             </script>
-                            <a href="http://www.creative-tim.com">Creative Tim</a>, made with love for a better web
+                            <a href="http://www.CPUT.AC.ZA">ICT</a>, made with love for a better web
                         </p>
                     </nav>
                 </div>
-            </footer> -->
+            </footer>
         </div>
     </div>
     <!-- 
